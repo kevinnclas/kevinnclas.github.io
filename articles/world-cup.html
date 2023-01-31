@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>World Cup 2022 in Qatar: a data analysis</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio - v3.9.0
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="../assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="../index.html">Kevin NICOLAS</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://www.linkedin.com/in/kevin-nicolas-78600/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/kevinnclas" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+          <a href="https://www.instagram.com/kevinnclas/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="../index.html" class="nav-link scrollto active"><i class="bx bx-home custom-color-home-article"></i> <span>Home</span></a></li>
+          <li><a href="#players" class="nav-link scrollto"><i class="bx bx-run"></i> <span>Players</span></a></li>
+          <li><a href="#nations" class="nav-link scrollto"><i class="bx bx-world"></i> <span>Nations</span></a></li>
+          <li><a href="#matches" class="nav-link scrollto"><i class="bx bx-football"></i> <span>Matches</span></a></li>
+          <li><a href="#coaching" class="nav-link scrollto"><i class="bx bx-glasses-alt"></i> <span>Coaching</span></a></li>
+          <li><a href="#worldcups" class="nav-link scrollto"><i class="bx bx-file-find"></i> <span>Comparison of World Cups</span></a></li>
+          <li><a href="#gofurther" class="nav-link scrollto"><i class="bx bx-bulb"></i> <span>Going Further</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <!--<h2>World Cup 2022 Data Analysis</h2>-->
+          <ol>
+            <li><a href="../index.html">Home</a></li>
+            <li>2022 FIFA World Cup - Data Analysis</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Intro Section ======= -->
+    <section id="intro" class="intro">
+      <div class="container">
+        <img src="../assets/img/articles/2022_fifa_world_cup/all players.jpeg" class="img-fluid" alt="" width="auto" data-aos="fade" style="border-radius: 5px;">
+        <div class="section-title" style=" margin-top: 20px; margin-bottom: -20px;">
+          <h1 style="text-align: center;">2022 FIFA World Cup in Qatar</h1>
+        </div>
+        <div class="container">
+          <p style="text-align: left; font-style: italic; margin-bottom: -10px;">An overwiew of the 2022 FIFA World Cup edition,
+            with an interesting view of the <b>sportive</b> challenges the nations and players faced during this edition in Qatar.</p>
+          <p style="color: #AB1B39; text-align: center;"><b>2023 - Kevin Nicolas</b></p>
+        </div>
+      </div>
+      <div class="container" style="margin-top: 10px;">
+        <p style="text-align: left;">In this article, we will see overall statistics about the 2022 FIFA World Cup, with sub-categories about:</p>
+          <ul style="font-style: italic; margin-top: 10px;">
+            <li>Players</li>
+            <li>Nations</li>
+            <li>Matches</li>
+            <li>Coaching</li>
+            <li>Comparison with other World Cup editions</li>
+            <li>Going further</li>
+          </ul>
+      </div>
+    </section>
+    <!-- End Intro Section -->
+
+    <!-- ======= Players Section ======= -->
+    <section id="players" class="players">
+      <div class="container">
+        <div class="section-title" style="margin-top: -20px;">
+          <h2>Players</h2>
+          <p style="font-style: italic;">Here are some of the players who have impressed this World Cup, others who haven't, based on their sportive <b>performances</b>.</p>
+        </div>
+      </div>
+      
+      <div class="container">
+        <div class="section-title">
+          <h3 style="color: #2a19ae;">Top scorer 🥇</h3>
+          <p style="margin-bottom: -15px;">Of course, in a football competition, we want to know who was the <b>best scorer</b>:</p>
+        </div>
+        <div class="container" style="text-align: center; margin-bottom: 20px;">
+          <img src="../assets/img/articles/2022_fifa_world_cup/best scorer.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+        </div>
+        <div style="text-align: center; margin-bottom: 15px;">
+          <a href="../assets/img/articles/2022_fifa_world_cup/best scorer.png" download="@kevinnclas-top-scorer-WC2022">
+            <button class="save-button">Save this image</button>
+          </a>
+        </div>
+        <p>
+          One man standing on the top scorer lead and that's <span style="color: #2a19ae"><b>Kylian Mbappé</b></span> with <span style="color:#f54842"><b>8 goals</b></span> in <b>7</b> matches played. 
+          <br>With an incredible competition, we will see him again later...</p>
+      </div>
+      
+      <div class="container">
+        <div class="section-title">
+          <h3 style="color: #2a19ae;">Best assists 🥇</h3>
+          <p style="margin-bottom: -15px;">We also want to know who made the <b>most assists</b> in this World Cup:</p>
+        </div>
+        <div class="container" style="text-align: center; margin-bottom: 20px;">
+          <img src="../assets/img/articles/2022_fifa_world_cup/best assist.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+        </div>
+        <div style="text-align: center; margin-bottom: 15px;">
+          <a href="../assets/img/articles/2022_fifa_world_cup/best assist.png" download="@kevinnclas-top-assists-WC2022">
+            <button class="save-button">Save this image</button>
+          </a>
+        </div>
+        <p>
+          As for the assists, we have <b>5 players</b> <i>(Bruno Fernandes, Harry Kane, Antoine Griezmann, Ivan Perišić and Lionel Messi)</i> that made <b>3 assists</b> in the competition. 
+          <br>Honorable mention goes to <span style="color: #2a19ae"><b>Bruno Fernandes</b></span> who made <span style="color:#f54842"><b>3 assists</b></span> in the least number of matches played, only <b>4</b>.
+        </p>
+      </div>
+      
+      <div class="container">
+        <div class="section-title">
+          <h3 style="color: #2a19ae;">Most decisive player 💪</h3>
+          <p style="margin-bottom: -15px;">If we combine <b>goals & assists</b>, we can go a bit further and see who was the most <b>decisive player</b> of the competition:</p>
+        </div>
+        <div class="container" style="text-align: center; margin-bottom: 20px;">
+          <img src="../assets/img/articles/2022_fifa_world_cup/most decisive player.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+        </div>
+        <div style="text-align: center; margin-bottom: 15px;">
+          <a href="../assets/img/articles/2022_fifa_world_cup/most decisive player.png" download="@kevinnclas-most-decisive-player-WC2022">
+            <button class="save-button">Save this image</button>
+          </a>
+        </div>
+        <p>
+          If we only focus on the total of goals and assists, <b>Kylian Mbappé</b> and <b>Lionel Messi</b> are tied to a score of <b>10</b>, with an advantage to the French phenomenon who scored <span style="color:#f54842"><b>8 goals</b></span> versus <b>7 goals</b> for the Argentinian magician.  
+          <br>But, if we go deeper and watch <b>Goals + Assists - Goals scored on Penalty Kicks made per 90 minutes</b>, we can see that <b>Kylian Mbappé</b> is more decisive, with a score of <span style="color:#f54842"><b>1,2</b></span> versus <span style="color:#4287f5">0,78</span> for Messi.  
+          <br>So we can conclude that <span style="color: #2a19ae;"><b>Kylian Mbappé</b></span>, in addition of being the <b>top scorer of the competition</b>, is also the <b>most decisive player</b> of the competition. What a journey for the 24 years old player!
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="section-title">
+          <h3 style="color: #2a19ae;">Youngest & oldest players 👶👴</h3>
+          <p style="margin-bottom: -15px;">During the World Cup, we often have some players that are experimented, others less. Let's see who are the <b>youngest</b> and the <b>oldest</b> player of the competition:</p>
+        </div>
+        <div class="container" style="text-align: center; margin-bottom: 20px;">
+          <img src="../assets/img/articles/2022_fifa_world_cup/youngest & oldest.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+        </div>
+        <div style="text-align: center; margin-bottom: 15px;">
+          <a href="../assets/img/articles/2022_fifa_world_cup/youngest & oldest.png" download="@kevinnclas-youngest-oldest-players-WC2022">
+            <button class="save-button">Save this image</button>
+          </a>
+        </div>
+        <p>
+          For the youngest players, we have <b>4 players</b> <i>(Gavi, Jewison Bennette, Garang Kuol and Youssoufa Moukoko)</i> that only had <b>17 years old</b> during the competition. Also, they all played at least one match.  
+          <br>I wanted to highlight <span style="color: #2a19ae;"><b>Gavi</b></span> that made an incredible appearance for his age, who started <b>4 matches</b> with Spain and even scored <span style="color:#f54842"><b>1 goal</b></span>.
+          <br><br>For the oldest players, we have <b>5 players</b> <i>(Pepe, Atiba Hutchinson, Dani Alves, Eiji Kawashima)</i> aged <b>39 years old</b>. At this age, to still be at this level of performance, is already remarkable. Among those players, <b>3 of them</b> were able to play at least one match during this World Cup.  
+          <br>The honorable mention is attributed to <span style="color: #2a19ae;"><b>Pepe</b></span>, who scored <span style="color:#f54842"><b>1 goal</b></span> for Portugal and who played <b>4 matches and 360 minutes</b> at 39.
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="section-title">
+          <h3 style="color: #2a19ae;">Most effective player 🎯</h3>
+          <p style="margin-bottom: -15px;">Now, let's see who was the <b>most effective</b> or <b>surprising</b> player of the tournament, <b>i.e. (Goals + Assits) - (Expected Goals + Expected Assists)</b>:</p>
+        </div>
+        <div class="container" style="text-align: center; margin-bottom: 20px;">
+          <img src="../assets/img/articles/2022_fifa_world_cup/most effective player.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+        </div>
+        <div style="text-align: center; margin-bottom: 15px;">
+          <a href="../assets/img/articles/2022_fifa_world_cup/most effective player.png" download="@kevinnclas-most-effective-player-WC2022">
+            <button class="save-button">Save this image</button>
+          </a>
+        </div>
+        <p>
+          Once again, <span style="color: #2a19ae;"><b>Kylian Mbappé</b></span>, with an effectiveness score of <b>3.5</b>, i.e. <span style="color:#f54842"><b>3,5 times more decisive than expected</b></span>, is the leader of this metric.
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="section-title">
+          <h3 style="color: #2a19ae;">Most disappointing player ☹️</h3>
+          <p style="margin-bottom: -15px;">On the other hand, we can have the <b>most disappointing player</b> of the competition, which is attributed to the player who was expected to score or make an assist but did not do so the most times.</p>
+        </div>
+        <div class="container" style="text-align: center; margin-bottom: 20px;">
+          <img src="../assets/img/articles/2022_fifa_world_cup/most disappointing player.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+        </div>
+        <div style="text-align: center; margin-bottom: 15px;">
+          <a href="../assets/img/articles/2022_fifa_world_cup/most disappointing player.png" download="@kevinnclas-most-disappointing-player-WC2022">
+            <button class="save-button">Save this image</button>
+          </a>
+        </div>
+        <p>
+          Unfortunately, this title is assigned to <span style="color: #2a19ae"><b>Lautaro Martínez</b></span>, who played <b>6 matches</b> and <b>241 minutes</b> but didn't score or made any assist during his games... He was expected to be <span style="color:#f54842">1,9 times more decisive that he actually was</span>.
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="section-title">
+          <h3 style="color: #2a19ae;">Super Sub of the competition 🦹</h3>
+          <p style="margin-bottom: -15px;">The title of "Super Sub" is given to the player who has replaced another during a match, and who <b>has scored or made an assist after coming in the most times</b>.</p>
+        </div>
+        <div class="container" style="text-align: center; margin-bottom: 20px;">
+          <img src="../assets/img/articles/2022_fifa_world_cup/super sub.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+        </div>
+        <div style="text-align: center; margin-bottom: 15px;">
+          <a href="../assets/img/articles/2022_fifa_world_cup/super sub.png" download="@kevinnclas-super-sub-WC2022">
+            <button class="save-button">Save this image</button>
+          </a>
+        </div>
+        <p>
+          As a result, we have <b>two players</b> that made an assist or scored a goal after joining a game <span style="color: #f54842"><b>3 times</b></span>.
+          <br>Those players are <b>Niclas Füllkrug</b> for Germany and <b>Álvaro Morata</b> for Spain. An honorable mention for <span style="color: #2a19ae"><b>Niclas Füllkrug</b></span>, who only played <b>3 matches</b>, one less than Morata.
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="section-title">
+          <h3 style="color: #2a19ae;">Most scoring league 🏅</h3>
+          <p style="margin-bottom: -15px;">With players from all over the world, who play in differents clubs and countries, I wanted to see <b>which league was the one that has the most scorers</b> in this World Cup:</p>
+        </div>
+        <div class="container" style="text-align: center; margin-bottom: 20px;">
+          <img src="../assets/img/articles/2022_fifa_world_cup/most scoring league.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+        </div>
+        <div style="text-align: center; margin-bottom: 15px;">
+          <a href="../assets/img/articles/2022_fifa_world_cup/most scoring league.png" download="@kevinnclas-most-scoring-league-WC2022">
+            <button class="save-button">Save this image</button>
+          </a>
+        </div>
+        <p>
+          With <b>24 leagues</b> represented, the 1st League of <b>England</b>, knowned as <span style="color:#f54842"><b>Premier League</b></span>, is the most scoring league, with <span style="color: #2a19ae"><b>37 goals</b></span> scored from its players.  
+          <br>In second position, we have <span style="color:#4287f5">Ligue 1</span> from France with <b>27 goals</b>, and in third place we have <span style="color:#4287f5">La Liga</span> from Spain with <b>16 goals</b>.
+        </p>
+      </div>
+    </section>
+    <!-- End Players Section -->
+
+    <!-- ======= Nations Section ======= -->
+    <section id="nations" class="nations">
+      <div class="container">
+        <div class="section-title" style="margin-top: -20px;">
+          <h2>Nations</h2>
+          <p style="font-style: italic;">Now, we will focus on nations who have impacted this World Cup and on others who haven't, based on their sportive <b>performances</b>.</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="section-title">
+          <h3 style="color: #2a19ae;">Most Wins 🥇</h3>
+          <p style="margin-bottom: -15px;">First, let see which nation <b>won the most matches</b>:</p>
+        </div>
+        <div class="container" style="text-align: center; margin-bottom: 20px;">
+          <img src="../assets/img/articles/2022_fifa_world_cup/most won team.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+        </div>
+        <div style="text-align: center; margin-bottom: 15px;">
+          <a href="../assets/img/articles/2022_fifa_world_cup/most won team.png" download="@kevinnclas-most-won-team-WC2022">
+            <button class="save-button">Save this image</button>
+          </a>
+        </div>
+        <p>
+          If we are looking the number of wins, we can see that the two finalists, <b>France and Argentina</b>, are logically on top on the ranking.  
+          <br>But with <span style="color:#f54842"><b>5 wins</b></span> (wins before a penalty shootout), <span style="color:#2a19ae"><b>France</b></span> is the nation that won the most games. 
+          <br>With a great journey in this competition, it's sad for France not to have won this World Cup. In fact, they only lost 1 game against <span style="color:#4287f5">Tunisia</span> (nation that we will see later), and draw against <span style="color:#4287f5">Argentina</span>, the World Cup Champion.
+          <p style="margin-top: 20px;">I thought it could be also interesting to know which continent <b>won the most matches</b>. In the following graph, there are the number of wins per continent:</p>
+        <div class="container" style="text-align: center; margin-bottom: 20px;">
+          <img src="../assets/img/articles/2022_fifa_world_cup/wins by continent.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+        </div>
+        <div style="text-align: center; margin-bottom: 15px;">
+          <a href="../assets/img/articles/2022_fifa_world_cup/wins by continent.png" download="@kevinnclas-wins-by-continent-WC2022">
+            <button class="save-button">Save this graph</button>
+          </a>
+        </div>
+        <p>
+          As for continents, we can see that <span style="color:#2a19ae"><b>Europe</b></span> is the continent with nations that won most of their games, with <span style="color:#f54842"><b>22 wins</b></span>.
+          <br>Of course, the variation and repartition of this graph is strongly impacted by the <b>number</b> of nations represented by each continent, which is not the same for all the continents.
+          <br>But, if we <b>normalize the amount of wins by the number of nations represented in each continent</b>, the ranking changes:
+        </p>
+        <div class="container" style="text-align: center; margin-bottom: 20px;">
+          <img src="../assets/img/articles/2022_fifa_world_cup/wins by continent normalized.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+        </div>
+        <div style="text-align: center; margin-bottom: 15px;">
+          <a href="../assets/img/articles/2022_fifa_world_cup/wins by continent normalized.png" download="@kevinnclas-wins-by-continent-normalized-WC2022">
+            <button class="save-button">Save this graph</button>
+          </a>
+        </div>
+        <p>
+          Because <span style="color:#2a19ae"><b>Oceania</b></span> only has Australia as a representative, and because Australia won <span style="color:#f54842"><b>2 matches</b></span>, it is now the leading continent in terms of won matches, closely followed by <span style="color:#4287f5">Europe</span>.
+          <br><br>NB: <i>Here, we don't talk about confederations, but <b>geographical continents</b>. In fact, <span style="color:#4287f5">Australia</span> is part of the AFC (Asian Football Confederation) and <span style="color:#4287f5">America</span> is split in half, with CONCACAF (Confederation of North, Central American and Caribbean Association Football) and CONMEBOL (South American Confederation).</i>
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="section-title">
+          <h3 style="color: #2a19ae;">Most offensive team ⚽️</h3>
+          <p style="margin-bottom: -15px;">Let's see which nation had the <b>most offensive team</b>:</p>
+        </div>
+        <div class="container" style="text-align: center; margin-bottom: 20px;">
+          <img src="../assets/img/articles/2022_fifa_world_cup/most offensive team.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+        </div>
+        <div style="text-align: center; margin-bottom: 15px;">
+          <a href="../assets/img/articles/2022_fifa_world_cup/most offensive team.png" download="@kevinnclas-most-offensive-team-WC2022">
+            <button class="save-button">Save this image</button>
+          </a>
+        </div>
+        <p>
+          Ranked by the number of <b>goals</b> scored, then by number of <b>shots on target</b> and finaly by number of <b>shots</b>, the <b>most offensive team</b> of this World Cup is <span style="color:#2a19ae"><b>France</b></span>, with <span style="color:#f54842"><b>16 goals</b></span>, <span style="color:#f54842"><b>33 shots on target</b></span> and <span style="color:#f54842"><b>100 shots</b></span>.
+          <br>But if we sort by the number of shots on target first, <span style="color:#4287f5">Argentina</span> is first, with <b>15 goals</b> for 41 shots on target. It is normal to find the <b>two finalists</b> of the competition as the two most offensive teams.
+          <br><br><span style="color:#4287f5"><i><b>France</b> is the only team that reached 100 shots.</i></span>
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="section-title">
+          <h3 style="color: #2a19ae;">Most defensive team 💎</h3>
+          <p style="margin-bottom: -15px;">To determine which team had the <b>best defense</b>, I took into account the number of <b>goals conceded</b>, the number of <b>shots on target conceded</b> and the number of <b>shots conceded</b>. After that, I <b>normalized per match played for each team</b>. 
+            <br><br>I sorted the results first by the number of normalized goals taken, then the number of games played, then the number of normalized shots conceded and finally the number of normalized shots conceded.
+            <br><br><u>Let me explain why I chose this order for the ranking of the defensiveness of the teams:</u>
+            <ul style="margin-top: 20px;">
+              <li>The first is the <b>number of goals conceded</b> in ascending order: it's the most obvious indicator, because if a team has a great defense, it doesn't take goals.</li>
+              <li>Second is the <b>number of match played</b> in descending order: the more you played games and the least you took goals, the better your defense was.</li>
+              <li>Then, the <b>number of shots on target conceded</b> in descending order: if you take a lot of shots on target but don't take many goals, it means you have a great goalkeeper and he is the last bastion of your team.</li>
+              <li>Finally, the <b>number of shots conceded</b> in ascending order: I assumed that the least shots conceded, the better defensive pressure was applied to prevent a shot from the other team.</li>
+            </ul>
+          </p>
+          <p style="margin-bottom: -15px;">
+            At the end, we have this result:
+          </p>
+        </div>
+        <div class="container" style="text-align: center; margin-bottom: 20px;">
+          <img src="../assets/img/articles/2022_fifa_world_cup/most defensive teams.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+        </div>
+        <div style="text-align: center; margin-bottom: 15px;">
+          <a href="../assets/img/articles/2022_fifa_world_cup/most defensive teams.png" download="@kevinnclas-most-defensive-teams-WC2022">
+            <button class="save-button">Save this image</button>
+          </a>
+        </div>
+        <p>
+          So, with my ranking method used, we have <span style="color:#2a19ae"><b>Tunisia</b></span> as the <b>best defensive team</b> of the tournament (<span style="color:#f54842"><b>1 goal conceded, 10 shots on target and 30 shots conceded</b></span> in <b>3 matches played</b>).  
+          <br>I <b>normalized</b> the data to get closer to reality, because <b>the teams didn't played the same amount of games</b>. But this technique of normalization is <b>not really the best way to approach a true reality</b>. In fact, the gap of games played on which we made the normalization is <b>not big enough</b> to have an effective normalization and a good representation of reality.  
+          <br>If we look only the final four nations <i>(Morocco, Croatia, Argentina and France)</i>, <span style="color:#2a19ae"><b>Morocco</b></span> has the best defense of the tournament, with <span style="color:#f54842"><b>5 goals conceded, 14 shots on target and 71 shots conceded</b></span> in <b>7 matches played</b>.
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="section-title">
+          <h3 style="color: #2a19ae;">Most decisive team 🎯</h3>
+          <p style="margin-bottom: -15px;">Now that we saw the most offensive and the most defensive team, I thought it was interesting to have the <b>most decisive team</b>, or most effective team, <b>i.e. Goals - Expected Goals</b>:</p>
+        </div>
+        <div class="container" style="text-align: center; margin-bottom: 20px;">
+          <img src="../assets/img/articles/2022_fifa_world_cup/most decisive team.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+        </div>
+        <div style="text-align: center; margin-bottom: 15px;">
+          <a href="../assets/img/articles/2022_fifa_world_cup/most decisive team.png" download="@kevinnclas-most-decisive-team-WC2022">
+            <button class="save-button">Save this image</button>
+          </a>
+        </div>
+        <p>
+          The most effective team is <span style="color:#2a19ae"><b>Netherlands</b></span>, which was <span style="color:#f54842"><b>5,3 times</b> more decisive and effective than expected</span>.
+          <br>This metric can be correlated to the <b>convertness</b> of the team. In fact, Netherlands has <b>the best rate of convertness</b> in this competition. This means that <span style="color:#f54842"><b>62,5%</b></span> of Netherlands' shots on target were converted into goals.
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="section-title", style="margin-bottom: -15px;">
+          <h3 style="color: #2a19ae;">Most disappointing team ☹️</h3>
+        </div>
+        <div class="container" style="text-align: center; margin-bottom: 20px;">
+          <img src="../assets/img/articles/2022_fifa_world_cup/most disappointing team.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+        </div>
+        <div style="text-align: center; margin-bottom: 15px;">
+          <a href="../assets/img/articles/2022_fifa_world_cup/most disappointing team.png" download="@kevinnclas-most-disappointing-team-WC2022">
+            <button class="save-button">Save this image</button>
+          </a>
+        </div>
+        <p>
+          On the other hand, the <b>most disappointing team</b> was <span style="color:#2a19ae"><b>Germany</b></span>, who was expected to score <span style="color:#f54842">4,1 times more than it actually scored</span>. 
+          <br>Looking at Germany's convertness score, we can see that only <span style="color:#f54842"><b>26,09%</b></span> of Germany's shots on target were converted into goals. The team is in the <b>22<sup>nd</sup> place</b> of the 32 teams in the tournament for this metric, which can explain why they are the most disappointing team, based on their performance.
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="section-title">
+          <h3 style="color: #2a19ae;">Most violent team 🟨</h3>
+          <p style="margin-bottom: -15px;">If you looked the behavior of each team during the matches of this World Cup, you could have detected some nations that were particularly more aggressive or violent. I wanted to see which team was the most violent team, looking at the <b>number of yellow cards</b> by team:</p>
+        </div>
+        <div class="container" style="text-align: center; margin-bottom: 20px;">
+          <img src="../assets/img/articles/2022_fifa_world_cup/most violent team.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+        </div>
+        <div style="text-align: center; margin-bottom: 15px;">
+          <a href="../assets/img/articles/2022_fifa_world_cup/most violent team.png" download="@kevinnclas-most-violent-team-WC2022">
+            <button class="save-button">Save this image</button>
+          </a>
+        </div>
+        <p>
+          As a result, we can see that <span style="color:#2a19ae"><b>Argentina</b></span> was the most violent nation during this World Cup, with <span style="color:#f54842"><b>19 yellow cards</b></span> received in only <b>7 matches</b>. That's almost <b>3 yellow cards per match</b>, which is not a very good metric to be proud of for a World champion.
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="section-title">
+          <h3 style="color: #2a19ae;">Most boring match 😴</h3>
+          <p style="margin-bottom: -15px;">With <b>64 matches</b> occuring during the World Cup, it happens that some matches are not very exciting. I wanted to know which match was the <b>most boring</b> one, according to the number of shots that happened during the game:</p>
+        </div>
+        <div class="container" style="text-align: center; margin-bottom: 20px;">
+          <img src="../assets/img/articles/2022_fifa_world_cup/most boring match.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+        </div>
+        <div style="text-align: center; margin-bottom: 15px;">
+          <a href="../assets/img/articles/2022_fifa_world_cup/most boring match.png" download="@kevinnclas-most-boring-match-WC2022">
+            <button class="save-button">Save this image</button>
+          </a>
+        </div>
+        <p>
+          With two nations from South America including the World champion of the competition, <span style="color:#2a19ae"><b>Argentina - Mexico</b></span> was the most boring match to watch, with only <span style="color:#f54842"><b>9 shots</b></span>. 
+          Fortunately for the spectators, the score was not a null score but a win <b>2 - 0</b> for <span style="color:#4287f5">Argentina</span>. During the match, Argentina shot <b>5 times</b> and Mexico <b>4 times</b>.
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="section-title">
+          <h3 style="color: #2a19ae;">Most dangerous team 🎯</h3>
+          <p style="margin-bottom: -15px;">This metric is representing the team which has the <b>highest rate of shots on target</b> on all the competition. 
+            <br>Because every team didn't have the same amount of shots, I also <b>normalized</b> the rate of shots on target by the number of shots of a team, to highlight the accuracy of teams that didn't had the opportunity to shoot often but were still precise enough to shoot on target. In our normalization case, it's like all the teams had the same amount of shots.
+            <br>Let's see the results:</p>
+        </div>
+        <div class="container" style="text-align: center; margin-bottom: 20px;">
+          <img src="../assets/img/articles/2022_fifa_world_cup/costa rica and cameroon.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+        </div>
+        <div style="text-align: center; margin-bottom: 15px;">
+          <a href="../assets/img/articles/2022_fifa_world_cup/costa rica and cameroon.png" download="@kevinnclas-most-dangerous-team-WC2022">
+            <button class="save-button">Save this image</button>
+          </a>
+        </div>
+        <p>
+          For the normalized metric, this is <span style="color:#2a19ae"><b>Costa Rica</b></span> that was the <b>most dangerous team</b> and that has the <b>highest rate of shots on target normalized by the number of shots</b>, with a rate of <span style="color:#f54842"><b>54,55%</b></span> <i>(score of 4,96 for the rate of shots on target normalized)</i>. 
+          <br>If we take the overall shots on target and shots without normalization, this is <span style="color:#2a19ae"><b>Cameroon</b></span> that was the <b>most dangerous team</b> with a rate of <span style="color:#f54842"><b>57,14%</b></span> <i>(score of 2,04 for the rate of shots on target normalized, 2<sup>nd</sup> best score of the 32 teams)</i>. 
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="section-title">
+          <h3 style="color: #2a19ae;">Youngest & oldest teams 👶👴</h3>
+          <p style="margin-bottom: -15px;">As we saw for the players, we will see which teams had the <b>youngest</b> and the <b>oldest</b> average age of the competition:</p>
+        </div>
+        <div class="container" style="text-align: center; margin-bottom: 20px;">
+          <img src="../assets/img/articles/2022_fifa_world_cup/youngest and oldest teams.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+        </div>
+        <div style="text-align: center; margin-bottom: 15px;">
+          <a href="../assets/img/articles/2022_fifa_world_cup/youngest and oldest teams.png" download="@kevinnclas-youngest-oldest-teams-WC2022">
+            <button class="save-button">Save this image</button>
+          </a>
+        </div>
+        <p>
+          The youngest team of the World Cup is <span style="color: #2a19ae;"><b>Ghana</b></span>, with an average age of <span style="color:#f54842"><b>24,35 years old</b></span>. With <b>3 matches played</b>, they managed to score <b>5 goals</b>.
+          <br>On the other hand, the oldest team is the <span style="color: #2a19ae;"><b>Islamic Republic of Iran</b></span>, with an average age of <span style="color:#f54842"><b>28,48 years old</b></span>. With also <b>3 matches played</b>, they scored <b>4 goals</b>.
+        </p>
+      </div>
+    </section>
+    <!-- End Players Section -->
+
+    <!-- ======= Matches Section ======= -->
+    <section id="matches" class="matches">
+      <div class="container">
+        <div class="section-title" style="margin-top: -20px;">
+          <h2>Matches</h2>
+          <p style="font-style: italic;">Here are some matches that were interesting to watch during this World Cup, based on their sportive <b>performances</b>.</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="section-title">
+          <h3 style="color: #2a19ae;">Largest gap in the score 🚀</h3>
+          <p style="margin-bottom: -15px;">With 64 matches, some of them were spectacular to watch. In particular the match with the <b>largest goals gap</b>, i.e. the match in which a team won with the biggest goals difference:</p>
+        </div>
+        <div class="container" style="text-align: center; margin-bottom: 20px;">
+          <img src="../assets/img/articles/2022_fifa_world_cup/largest win gap.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+        </div>
+        <div style="text-align: center; margin-bottom: 15px;">
+          <a href="../assets/img/articles/2022_fifa_world_cup/largest win gap.png" download="@kevinnclas-largest-win-gap-WC2022">
+            <button class="save-button">Save this image</button>
+          </a>
+        </div>
+        <p>
+          This match was <span style="color:#2a19ae"><b>Spain - Costa Rica</b></span> with a score gap of <span style="color:#f54842"><b>7 goals</b></span>, resulting a win score of <b>7 - 0</b> for <span style="color:#4287f5">Spain</span>. 
+          <br>In this match, they were <b>16 shots</b>, all from Spain. Also, Spain had <b>81%</b> possession of the ball.
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="section-title">
+          <h3 style="color: #2a19ae;">Fastest goal ⚡️</h3>
+          <p style="margin-bottom: -15px;">Let's see now the <b>fastest goal</b> of the competition:</p>
+        </div>
+        <div class="container" style="text-align: center; margin-bottom: 20px;">
+          <img src="../assets/img/articles/2022_fifa_world_cup/fastest goal.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+        </div>
+        <div style="text-align: center; margin-bottom: 15px;">
+          <a href="../assets/img/articles/2022_fifa_world_cup/fastet goal.png" download="@kevinnclas-fastest-goal-WC2022">
+            <button class="save-button">Save this image</button>
+          </a>
+        </div>
+        <p>
+          During the match <b>Canada - Croatia</b>, <span style="color:#2a19ae"><b>Alphonso Davies</b></span> scored a goal header at the <span style="color:#f54842"><b>2<sup>nd</sup> minute</b></span>. This was the <span style="color:#f54842"><b>Canada's first ever World Cup goal</b></span>.
+          <br>Unfortunately for Canada, they lost <b>4 - 1</b> in this match against <span style="color:#4287f5">Croatia</span>.
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="section-title">
+          <h3 style="color: #2a19ae;">Latest goal ⏳</h3>
+          <p style="margin-bottom: -15px;">Now that we saw the fastest goal, we will see the <b>latest goals</b> of the competition:</p>
+        </div>
+        <div class="container" style="text-align: center; margin-bottom: 20px;">
+          <img src="../assets/img/articles/2022_fifa_world_cup/latest goals.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+        </div>
+        <div style="text-align: center; margin-bottom: 15px;">
+          <a href="../assets/img/articles/2022_fifa_world_cup/latest goals.png" download="@kevinnclas-latest-goals-WC2022">
+            <button class="save-button">Save this image</button>
+          </a>
+        </div>
+        <p>
+          <b>In the regulation time of 90 minutes</b>, the latest goal during a match of the competition is the one of <span style="color:#2a19ae"><b>Mehdi Taremi</b></span> who scored a penalty kick at the <span style="color:#f54842"><b>103<sup>rd</sup> minute</b></span> against England. 
+          Unfortunately for IR Iran, they lost <b>6 - 2</b> in this group match against <span style="color:#4287f5">England</span>.
+          <br><b>Taking into account the extra time,</b> the latest goal during a match of the competition is the one of <span style="color:#2a19ae"><b>Kylian Mbappé</b></span> who scored a penalty kick at the <span style="color:#f54842"><b>118<sup>th</sup> minute</b></span> against Argentina, to get the draw against them. 
+          Unfortunately for France, they lost in the <b>penalty shootout</b> in the final against <span style="color:#4287f5">Argentina</span>, after a draw of <b>3 - 3</b>.
+        </p>
+      </div>
+    </section>
+    <!-- End Matches Section -->
+
+    <!-- ======= Coaching Section ======= -->
+    <section id="coaching" class="coaching">
+      <div class="container">
+        <div class="section-title" style="margin-top: -20px;">
+          <h2>Coaching</h2>
+          <p style="font-style: italic;">In this section, we will see some metrics about good coaching decisions that happened during the World Cup, based on the teams' <b>performances</b>.</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="section-title">
+          <h3 style="color: #2a19ae;">Most effective coaching ✅</h3>
+          <p style="margin-bottom: -15px;">As an effective coaching, I wanted to see which coach had made the most substitutes of <b>players who scored or made an assist</b>:</p>
+        </div>
+        <div class="container" style="text-align: center; margin-bottom: 20px;">
+          <img src="../assets/img/articles/2022_fifa_world_cup/most effective coaching.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+        </div>
+        <div style="text-align: center; margin-bottom: 15px;">
+          <a href="../assets/img/articles/2022_fifa_world_cup/most effective coaching.png" download="@kevinnclas-most-effective-coaching-WC2022">
+            <button class="save-button">Save this image</button>
+          </a>
+        </div>
+        <p>
+          Without many surprise, <span style="color:#2a19ae"><b>Croatia</b></span> had the best coaching, with <span style="color:#f54842"><b>9 substitutes players</b></span> that scored or made an assist in this World Cup.
+          <br><b>Zlatko Dalić</b>, coach of Croatia since <b>2017</b>, had an important role in the success of <span style="color:#4287f5">Croatia</span> in this competition. 
+          In fact, they finished at the <b>3<sup>rd</sup> place</b>, with <b>7 matches</b> and only <b>2 wins</b>. To go this far without winning that much, we can see the <b>strength of Croatia's coaching</b>.
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="section-title">
+          <h3 style="color: #2a19ae;">Fastest substitute to score 💡</h3>
+          <p style="margin-bottom: -15px;">To unlock a match, sometimes a coach has to replace a player with another. We will see which substitute was the <b>most prolific</b>, <b>i.e. the goal scored by a substitute with the smallest time gap between his entrance and the time he scored</b>:</p>
+        </div>
+        <div class="container" style="text-align: center; margin-bottom: 20px;">
+          <img src="../assets/img/articles/2022_fifa_world_cup/most prolific sub.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+        </div>
+        <div style="text-align: center; margin-bottom: 15px;">
+          <a href="../assets/img/articles/2022_fifa_world_cup/most prolific sub.png" download="@kevinnclas-most-prolific-sub-WC2022">
+            <button class="save-button">Save this image</button>
+          </a>
+        </div>
+        <p>
+          This substitute is <span style="color:#2a19ae"><b>Randal Kolo Muani</b></span>, during the match <b>France - Morocco</b>. He entered at the <b>79<sup>th</sup> minute</b>, and <span style="color:#f54842"><b>less than a minute after</b></span>, he score the 2<sup>nd</sup> goal for France in the semi-final.
+          <br>Thanks to <b>Didier Deschamps</b>, coach of France since <b>2012</b>, Randal Kolo Muani scored his first World Cup goal ever at the age of <b>24</b>. 
+        </p>
+      </div>
+    </section>
+    <!-- End Coaching Section -->
+
+    <!-- ======= Other World Cups Section ======= -->
+    <section id="worldcups" class="worldcups">
+      <div class="container">
+        <div class="section-title" style="margin-top: -20px;">
+          <h2>Comparison of World Cups</h2>
+          <p style="font-style: italic;">Let's compare this 2022 World Cup with the other editions that happened since 1998 (with 32 teams), based on the sportive <b>performances</b>.</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="section-title">
+          <h3 style="color: #2a19ae;">Global statistics 📊</h3>
+          <p style="margin-bottom: -15px;">We will compare the differents World Cups since 1998 on global statistics like number of <b>goals, yellow cards and red cards</b>.
+            <br>We can start by looking at the <b>number of goals</b> for each World Cup's edition since 1998:</p>
+        </div>
+        <div class="container" style="text-align: center; margin-bottom: 20px;">
+          <img src="../assets/img/articles/2022_fifa_world_cup/number of goals per WC edition.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+        </div>
+        <div style="text-align: center; margin-bottom: 15px;">
+          <a href="../assets/img/articles/2022_fifa_world_cup/number of goals per WC edition.png" download="@kevinnclas-number-of-goals-WC-edition-WC2022">
+            <button class="save-button">Save this graph</button>
+          </a>
+        </div>
+        <p>
+          We can see that this 2022 World Cup is the <span style="color:#2a19ae"><b>most prolific edition since 1998</b></span>, with <span style="color:#f54842"><b>172 goals</b></span>.
+          <br><br>Now, let's see the <b>number of yellow cards</b> for each World Cup's edition since 1998:
+        </p>
+        <div class="container" style="text-align: center; margin-bottom: 20px;">
+          <img src="../assets/img/articles/2022_fifa_world_cup/number of yellow cards per WC edition.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+        </div>
+        <div style="text-align: center; margin-bottom: 15px;">
+          <a href="../assets/img/articles/2022_fifa_world_cup/number of yellow cards per WC edition.png" download="@kevinnclas-number-of-yellow-WC-edition-WC2022">
+            <button class="save-button">Save this graph</button>
+          </a>
+        </div>
+        <p>
+          We can see that the 2006 edition was particularly violent with <b>345 yellow cards</b>. As for the <b>2022 World Cup's edition</b>, it's only the <span style="color:#2a19ae"><b>5<sup>th</sup> place out of the 7 editions since 1998</b></span>, with <span style="color:#f54842"><b>222 yellow cards</b></span>.
+          <br><br>Finally, let's see the <b>number of red cards</b> for each World Cup's edition since 1998:
+        </p>
+        <div class="container" style="text-align: center; margin-bottom: 20px;">
+          <img src="../assets/img/articles/2022_fifa_world_cup/number of red cards per WC edition.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+        </div>
+        <div style="text-align: center; margin-bottom: 15px;">
+          <a href="../assets/img/articles/2022_fifa_world_cup/number of red cards per WC edition.png" download="@kevinnclas-number-of-red-WC-edition-WC2022">
+            <button class="save-button">Save this graph</button>
+          </a>
+        </div>
+        <p>
+          Again we see that the 2006 edition was the most virulent edition with <b>28 red cards</b>. As for the <b>2022 World Cup's edition</b>, it's the <span style="color:#2a19ae"><b>last edition in number of red cards since 1998</b></span>, with only <span style="color:#f54842"><b>4 red cards</b></span>, on a par with the 2004 edition.
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="section-title">
+          <h3 style="color: #2a19ae;">Continent's participation 🌍</h3>
+          <p style="margin-bottom: -15px;">In this part, we will see the number of countries, <b>per continent</b>, who participated in the <b>final round</b> of this 2022 edition:</p>
+        </div>
+        <div class="container" style="text-align: center; margin-bottom: 20px;">
+          <img src="../assets/img/articles/2022_fifa_world_cup/all the continent.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+        </div>
+        <div style="text-align: center; margin-bottom: 15px;">
+          <a href="../assets/img/articles/2022_fifa_world_cup/all the continent.png" download="@kevinnclas-all-the-continent-WC2022">
+            <button class="save-button">Save this image</button>
+          </a>
+        </div>
+        <p>
+          For the <span style="color:#f54842"><b>first time since at least 1998</b></span>, <span style="color:#2a19ae"><b>every continent is represented by at least one country</b></span> in the final round of the World Cup.
+          <br>For <b>Africa</b>, the countries that represented the continent are <span style="color:#4287f5">Senegal and Morocco</span>. For <b>America</b>, it's <span style="color:#4287f5">USA, Brazil and Argentina</span>. For <b>Asia</b>, it's <span style="color:#4287f5">Korea Republic and Japan</span>. For <b>Europe</b>, the most represented continent, the countries are <span style="color:#4287f5">Spain, Portugal, France, Netherlands, Switzerland, Croatia, England and Poland</span>. Finally, for <b>Oceania</b>, it's only <span style="color:#4287f5">Australia</span>.
+          <br>It can shows the rise of the global level of football in the world, and it will be interesting to see this repartition in the next edition. 
+          <br><br>NB: <i>Here, we don't talk about confederations, but <b>geographical continents</b>. In fact, <span style="color:#4287f5">Australia</span> is part of the AFC (Asian Football Confederation) and <span style="color:#4287f5">America</span> is split in half, with CONCACAF (Confederation of North, Central American and Caribbean Association Football) and CONMEBOL (South American Confederation).</i>
+        </p>
+      </div>
+    </section>
+    <!-- End Other World Cups Section -->
+  
+    <!-- ======= Going Further Section ======= -->
+    <section id="gofurther" class="gofurther">
+      <div class="container">
+        <div class="section-title" style="margin-top: -20px;">
+          <h2>Going Further</h2>
+          <p style="font-style: italic;">During this 2022 edition, I noticed some specificities according to the <b>form and tiredness</b> of the players. In fact, this World Cup happened in the middle of a regular season, unlike the previous editions. Let's discuss of these metrics:</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="section-title">
+          <h3 style="color: #2a19ae;">Average of additional time ⏱️</h3>
+          <p style="margin-bottom: -15px;">If you watched some matches during the World Cup, you probably noticed that there was a lot of additional time added, unlike in the regular season. 
+            <br>This happened because the FIFA's objective was to increase effective playing time. See the <b>average of additional time</b> on all the competition:</p>
+        </div>
+        <div class="container" style="text-align: center; margin-bottom: 20px;">
+          <img src="../assets/img/articles/2022_fifa_world_cup/additionnal time.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+        </div>
+        <div style="text-align: center; margin-bottom: 15px;">
+          <a href="../assets/img/articles/2022_fifa_world_cup/additionnal time.png" download="@kevinnclas-additionnal-time-WC2022">
+            <button class="save-button">Save this image</button>
+          </a>
+        </div>
+        <p>
+          On average on this World Cup, there was more than <span style="color:#f54842"><b>10 minutes</b></span> of additional time by match. In total, that was <span style="color:#2a19ae"><b>650 minutes</b></span> played in additional time in <b>64 matches played</b>.
+          <br>The maximum additional time during a half of a match was <span style="color:#4287f5"><b>14 minutes</b></span>. It happened during the first half of <b>England - IR Iran</b>.
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="section-title">
+          <h3 style="color: #2a19ae;">Rate of injured players among substitutes 🩺</h3>
+          <p style="margin-bottom: -15px;">During this competition, we saw a lot of injured players, maybe because the fatigue accumulated during the first part of the regular season. I wanted to see the <b>rate of players being replaced due to injury compared to the overall number of players being replaced</b> on all the competition:</p>
+        </div>
+        <div class="container" style="text-align: center; margin-bottom: 20px;">
+          <img src="../assets/img/articles/2022_fifa_world_cup/injuries.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+        </div>
+        <div style="text-align: center; margin-bottom: 15px;">
+          <a href="../assets/img/articles/2022_fifa_world_cup/injuries.png" download="@kevinnclas-injuries-WC2022">
+            <button class="save-button">Save this image</button>
+          </a>
+        </div>
+        <p>
+          During the 64 matches, there were <b>587 substitutes</b> made by the coaches. Among them, <span style="color:#f54842"><b>38 substitutes</b></span> were made because a player was <b>injured</b> and not able to play anymore. As a result, <span style="color:#2a19ae"><b>6,47%</b></span> of all players being substituted were injured.
+          <br>Maybe it's because the <b>players are more tired</b> and <b>easily injured</b>, after a first part of the regular season.
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="section-title">
+          <h3 style="color: #2a19ae;">Most prolific half ⚽️</h3>
+          <p style="margin-bottom: -15px;">To finish my analysis, I wanted to see which half of a match was the <b>most profilic in terms of average goals scored</b>, and see if there was any difference:</p>
+        </div>
+        <div class="container" style="text-align: center; margin-bottom: 20px;">
+          <img src="../assets/img/articles/2022_fifa_world_cup/most prolific half.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+        </div>
+        <div style="text-align: center; margin-bottom: 15px;">
+          <a href="../assets/img/articles/2022_fifa_world_cup/most prolific half.png" download="@kevinnclas-most-prolific-half-WC2022">
+            <button class="save-button">Save this image</button>
+          </a>
+        </div>
+        <p>
+          As we can see, <span style="color:#f54842"><b>0,52 goal</b></span> was scored during the <span style="color:#2a19ae"><b>1<sup>st</sup> half</b></span>. As for the <span style="color:#2a19ae"><b>2<sup>nd</sup> half</b></span>, it's <span style="color:#f54842"><b>0,8 goal</b></span> that was scored.
+          <br>Maybe it's because the teams are not enough confortable in the 1<sup>st</sup> half to be too much attacking, and matches tend to be more released at the end of the match to try to win.
+        </p>
+      </div>
+    </section>
+    <!-- End Going Further Section -->
+
+    <!-- ======= Thank you for reading ======= -->
+    <section id="thankyou" class="thankyou">
+      <div class="container">
+        <div class="section-title" style="margin-top: -20px;">
+          <h2>Thank you for reading !</h2>
+          <p style="margin-bottom: -20px;">I did this project because I love <b>football</b> and <b>data analysis</b>. This was a great opportunity for me to mix both of them and to challege myself with something I never did. 
+            I really enjoyed <b>gathering data</b> from my various sources <i>(<a href="https://fbref.com/en/comps/1/schedule/World-Cup-Scores-and-Fixtures" target="_blank">fbref.com</a>, <a href="https://www.flashscore.fr" target="_blank">flashscore.fr</a> or <a href="https://en.wikipedia.org/wiki/FIFA_World_Cup" target="_blank">wikipedia.com</a>)</i>, <b>creating my data</b> files, <b>exploring</b> it, creating <b>vizualisation</b> to be easier for you to read and memorize, and finally <b>writing</b> and <b>coding</b> this article. 
+            <br>I am strongly considering starting the experience again with a new project, about other subjects that I am passionate about. Of course, if you have any suggestion, <b>feel free to contact me</b>!
+            <br>Thank you very much for reading me and my work, I hope this will remind you of your good times during the World Cup!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div id="contact-me" class="container">
+      <h4>Kevin Nicolas</h4>
+      <p>Feel free to contact me!</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/kevin-nicolas-78600/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://github.com/kevinnclas" target="_blank" class="git"><i class="bx bxl-github"></i></a>
+        <a href="https://www.instagram.com/kevinnclas/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+      </div>
+
+  </main>
+  <!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>iPortfolio</span></strong>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/typed.js/typed.min.js"></script>
+  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
