@@ -775,6 +775,44 @@ section {
 }
 
 /*--------------------------------------------------------------
+# World Cup article
+--------------------------------------------------------------*/
+.players p {
+  text-align: justify;
+}
+.nations p {
+  text-align: justify;
+}
+.matches p {
+  text-align: justify;
+}
+.coaching p {
+  text-align: justify;
+}
+.worldcups p {
+  text-align: justify;
+}
+.gofurther p {
+  text-align: justify;
+}
+.thankyou p {
+  text-align: justify;
+}
+.save-button {
+  background-color: #1f75d8;
+  color: white;
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 6px;
+}
+.save-button:hover {
+  background-color: #062c65;
+}
+
+/*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
 .services .icon-box {
