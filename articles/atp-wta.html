@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>ATP & WTA Rankings: a Data Analysis</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio - v3.9.0
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="../assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="../index.html">Kevin NICOLAS</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://www.linkedin.com/in/kevinnclas/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/kevinnclas" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+          <a href="https://www.instagram.com/kevinnclas/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="../index.html" class="nav-link scrollto active"><i class="bx bx-home custom-color-home-article"></i> <span>Home</span></a></li>
+          <li><a href="#hands" class="nav-link scrollto"><i class="bx bx-like"></i> <span>Strong Hands</span></a></li>
+          <li><a href="#heights" class="nav-link scrollto"><i class="bx bx-id-card"></i> <span>Heights</span></a></li>
+          <li><a href="#countries" class="nav-link scrollto"><i class="bx bx-world"></i> <span>Countries</span></a></li>
+          <li><a href="#francefocus" class="nav-link scrollto"><i class="bx bx-bulb"></i> <span>Focus on France</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <!--<h2>World Cup 2022 Data Analysis</h2>-->
+          <ol>
+            <li><a href="../index.html">Home</a></li>
+            <li>ATP & WTA Rankings - Data Analysis</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Intro Section ======= -->
+    <section id="intro" class="intro">
+      <div class="container">
+        <img src="../assets/img/articles/atp_wta_rankings/rg_champions.png" class="img-fluid" alt="" width="auto" data-aos="fade" style="border-radius: 5px;">
+        <div class="section-title" style=" margin-top: 20px; margin-bottom: -20px;">
+          <h1 style="text-align: center;">ATP & WTA Rankings (June 2023)</h1>
+        </div>
+        <div class="container">
+          <p style="text-align: left; font-style: italic;"> Let's take a look at the <b>profiles</b> of the players in the top 250 of the ATP and WTA rankings, 
+            and see if there are any similarities or differences between them. 
+            <br>In this analysis, I compared two populations: <b>all the 250 players</b> and <b>the top 20 of ATP & WTA players</b>, to see if we can spot any characteristics that define a very good player, i.e. a top 20 player.</p>
+          <p style="text-align: left; font-style: italic; text-align: center;">A special thank to <a href="https://github.com/JeffSackmann" target="_blank">Jeff Sackmann</a>, who created and still update the 4 datasets used in this analysis.</p>
+          <p style="color: #AB1B39; text-align: center;"><b>2023 - Kevin Nicolas</b></p>
+        </div>
+      </div>
+      <div class="container" style="margin-top: 10px;">
+        <p style="text-align: left;">In this article, we will see overall statistics about the players' profiles, with sub-categories about:</p>
+          <ul style="font-style: italic; margin-top: 10px;">
+            <li>Hands</li>
+            <li>Heights</li>
+            <li>Countries</li>
+            <li>Focus on France</li>
+          </ul>
+      </div>
+    </section>
+    <!-- End Intro Section -->
+
+    <!-- ======= Hands Section ======= -->
+    <section id="hands" class="hands">
+      <div class="container">
+        <div class="section-title" style="margin-top: -20px;">
+          <h2>Strong Hands</h2>
+          <p style="font-style: italic;">In tennis, whether you're right-handed or left-handed, your game strategy won't be the same. 
+            Let's look the <b>strong hand</b>'s distribution among the players.</p>
+        </div>
+      </div>
+      
+      <div class="container">
+        <div class="section-title">
+          <h3 style="color: #2a19ae;">ATP players' strong hand 👋</h3>
+          <p style="margin-bottom: -15px;">The world's population is 90% right-handed and 10% left-handed. Let's see if we find the same repartition among <b>ATP players</b>:</p>
+        </div>
+        <div class="container" style="text-align: center; margin-bottom: 20px;">
+          <img src="../assets/img/articles/atp_wta_rankings/atp_hands.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+        </div>
+        <div style="text-align: center; margin-bottom: 15px;">
+          <a href="../assets/img/articles/atp_wta_rankings/atp_hands.png" download="@kevinnclas-atp-hands">
+            <button class="save-button">Save this image</button>
+          </a>
+        </div>
+        <p>
+          As we can see, on the 250 players, there are almost <span style="color: #f54842"><b>83%</b></span> of the players that are <b>right-handed</b>, and <span style="color: #f54842"><b>17%</b></span> are <b>left-handed</b>. 
+          <br>In the top 20, only one player is left-handed, that is <span style="color: #2a19ae"><b>Cameron Norie</b></span>, actually ranked 14th.
+          <br>In comparison with the world population, we can see that <b>there are a lot of left-handed players</b> among the top 250. They are less present in the top 20, so be left-handed shouldn't be a factor to be a great player. Everyone has a chance!</p>
+      </div>
+      
+      <div class="container">
+        <div class="section-title">
+          <h3 style="color: #2a19ae;">WTA players' strong hand 👋</h3>
+          <p style="margin-bottom: -15px;">Now, let's see if the distribution is similar with the <b>WTA players</b>:</p>
+        </div>
+        <div class="container" style="text-align: center; margin-bottom: 20px;">
+          <img src="../assets/img/articles/atp_wta_rankings/wta_hands.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+        </div>
+        <div style="text-align: center; margin-bottom: 15px;">
+          <a href="../assets/img/articles/atp_wta_rankings/wta_hands.png" download="@kevinnclas-wta-hands">
+            <button class="save-button">Save this image</button>
+          </a>
+        </div>
+        <p>
+          For WTA top 250 players, <span style="color: #f54842"><b>89%</b></span> of them are <b>right-handed</b>, and <span style="color: #f54842"><b>11%</b></span> are <b>left-handed</b>. 
+          <br>In the top 20, we have two players left-handed, that are <span style="color: #2a19ae"><b>Petra Kvitova</b></span>, actually ranked 9th, and <span style="color: #2a19ae"><b>Beatriz Haddad Maia</b></span>, ranked 13th.
+          <br>Same as of the ATP players, a <b>left hand as a strong hand doesn't really influence</b> whether a player makes the top 20. However, as with ATP players, there is a <b>higher proportion of left-handed players</b> than in the rest of the population.</p>
+        </p>
+      </div>
+    </section>
+    <!-- End Hands Section -->
+
+    <!-- ======= Heights Section ======= -->
+    <section id="heights" class="heights">
+      <div class="container">
+        <div class="section-title" style="margin-top: -20px;">
+          <h2>Heights</h2>
+          <p style="font-style: italic;">Now, we will focus on players' <b>heights</b>, to see if a tall player has an advantage over a smaller player.</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="section-title">
+          <h3 style="color: #2a19ae;">ATP players' heights 📏</h3>
+          <p style="margin-bottom: -15px;">Let's remember that the average size of a male adult is about <b>180cm</b>. What about the ATP top 250 players? Let's find out:</p>
+        </div>
+        <div class="container" style="text-align: center; margin-bottom: 20px;">
+          <img src="../assets/img/articles/atp_wta_rankings/atp_heights.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+        </div>
+        <div style="text-align: center; margin-bottom: 15px;">
+          <a href="../assets/img/articles/atp_wta_rankings/atp_heights.png" download="@kevinnclas-atp-heights">
+            <button class="save-button">Save this image</button>
+          </a>
+        </div>
+        <p>
+          Surprisingly, we can see that the average size of ATP players is <b>higher</b> than average population. In fact, the average size is about <span style="color: #f54842"><b>186cm</b></span> for the top 250, and even <span style="color: #f54842"><b>190cm</b></span> for the top 20. 
+          <br>With a difference of <b>4cm</b> on average between the top 20 and the rest of the players, we can maybe say that <b>height is a good influencer for a tennis player</b>, granting him to hit the ball with a better angle, with more power and to avoid the net more easily on a riskier ball.
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="section-title">
+          <h3 style="color: #2a19ae;">WTA players' heights 📏</h3>
+          <p style="margin-bottom: -15px;">Let's remember that the average size of a female adult is about <b>165cm</b>. What about the WTA top 250 players? Let's find out:</p>
+        </div>
+        <div class="container" style="text-align: center; margin-bottom: 20px;">
+          <img src="../assets/img/articles/atp_wta_rankings/wta_heights.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+        </div>
+        <div style="text-align: center; margin-bottom: 15px;">
+          <a href="../assets/img/articles/atp_wta_rankings/wta_heights.png" download="@kevinnclas-wta-heights">
+            <button class="save-button">Save this image</button>
+          </a>
+        </div>
+        <p>
+          As for the men, we can see that the average size of WTA players is <b>higher</b> than average population. In fact, the average size for the top 250 is about <span style="color: #f54842"><b>173cm</b></span>, and <span style="color: #f54842"><b>177cm</b></span> for the top 20. 
+          <br>With also a difference of <b>4cm</b> on average between the top 20 and the rest of the players, we can see the same difference in size that separates very good players from other professional players, for both men and women.
+          <br><br>That's why we can say that <b>tall players seems to have an advantage when it comes to winning at tennis</b>.
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="section-title">
+          <h3 style="color: #2a19ae;">Tallest players 🧍‍♂️</h3>
+          <p style="margin-bottom: -15px;">Let's find out <b>who's the tallest ATP & WTA players</b>:</p>
+        </div>
+        <div class="container" style="text-align: center; margin-bottom: 20px;">
+          <img src="../assets/img/articles/atp_wta_rankings/tallest_players.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+        </div>
+        <div style="text-align: center; margin-bottom: 15px;">
+          <a href="../assets/img/articles/atp_wta_rankings/tallest_players.png" download="@kevinnclas-wta-heights-tall">
+            <button class="save-button">Save this image</button>
+          </a>
+        </div>
+        <p>
+          The tallest ATP player is <span style="color: #2a19ae"><b>John Isner</b></span>, ranked 103rd, with <span style="color: #f54842"><b>206cm</b></span>. In the top 20, that's <span style="color: #2a19ae"><b>Daniil Medvedev</b></span> who is the tallest, with <span style="color: #f54842"><b>198cm</b></span> and ranked 3rd. 
+          <br>Now in the WTA players, that's <span style="color: #2a19ae"><b>Raluka Serban</b></span> who is the tallest player, ranked 173th and with a height of <span style="color: #f54842"><b>188cm</b></span>. In the top 20, that's <span style="color: #2a19ae"><b>Beatriz Haddad Maia</b></span> who is the tallest, with <span style="color: #f54842"><b>185cm</b></span> and ranked 13th. 
+          <br><br>That's why we can say that <b>tall players seems to have an advantage when it comes to winning at tennis</b>.
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="section-title">
+          <h3 style="color: #2a19ae;">Smallest players 🧍</h3>
+          <p style="margin-bottom: -15px;">Now, what about <b>the smallest ATP & WTA players</b>? Let's see:</p>
+        </div>
+        <div class="container" style="text-align: center; margin-bottom: 20px;">
+          <img src="../assets/img/articles/atp_wta_rankings/smallest_players.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+        </div>
+        <div style="text-align: center; margin-bottom: 15px;">
+          <a href="../assets/img/articles/atp_wta_rankings/smallest_players.png" download="@kevinnclas-wta-heights-small">
+            <button class="save-button">Save this image</button>
+          </a>
+        </div>
+        <p>
+          Even if they are smaller than average world population, some players are still among the best players of tennis. For the ATP ranking, the smallest player is <span style="color: #2a19ae"><b>Yuta Shimizu</b></span>, ranked 246th, with <span style="color: #f54842"><b>163cm</b></span>. In the top 20, the smallest is <span style="color: #2a19ae"><b>Casper Ruud</b></span>, with <span style="color: #f54842"><b>183cm</b></span> and ranked 4th. 
+          <br>Now for WTA players, that's <span style="color: #2a19ae"><b>Lauren Davis</b></span> who is the smallest player, ranked 44th and with a height of <span style="color: #f54842"><b>157cm</b></span>. In the top 20, that's <span style="color: #2a19ae"><b>Ons Jabeur</b></span> who is the smallest, with <span style="color: #f54842"><b>167cm</b></span> and ranked 6th. 
+          <br><br>It's interesting to se that the smallest players of the top 20 for ATP & WTA are still <b>above the world average height</b>.
+        </p>
+      </div>
+      
+    </section>
+    <!-- End Heights Section -->
+
+    <!-- ======= Countries Section ======= -->
+    <section id="countries" class="countries">
+      <div class="container">
+        <div class="section-title" style="margin-top: -20px;">
+          <h2>Countries</h2>
+          <p style="font-style: italic;">Now we'll take a look at the <b>country</b> breakdown of the various ATP & WTA players:</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="section-title">
+          <h3 style="color: #2a19ae;">ATP's most represented countries 🏳️</h3>
+          <p style="margin-bottom: -15px;">With 250 players from all around the world, let's see which country is <b>the most represented by the ATP players</b>:</p>
+        </div>
+        <div class="container" style="text-align: center; margin-bottom: 20px;">
+          <img src="../assets/img/articles/atp_wta_rankings/atp_countries.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+        </div>
+        <div style="text-align: center; margin-bottom: 15px;">
+          <a href="../assets/img/articles/atp_wta_rankings/atp_countries.png" download="@kevinnclas-atp-countries">
+            <button class="save-button">Save this image</button>
+          </a>
+        </div>
+        <p>
+          The most represented countries among the top 250 ATP players is <span style="color: #2a19ae"><b>Italy</b></span> with <span style="color: #f54842"><b>24</b></span> players. <b>USA</b> and <b>France</b> are right next after, with each <span style="color: #f54842"><b>23</b></span> players.
+
+          <br><span style="color: #2a19ae"><b>Russia</b></span> has only <span style="color: #f54842"><b>10</b></span> players in the top 250. However, <span style="color: #f54842"><b>3</b></span> of them are in the top 20, which is the <b>most represented country</b> among the best ATP players. <b>USA</b> has also <b>3 players</b> in the top 20 ATP players.  
+
+          <br><br>Three players are in the top 20, and they are <b>the only ones from their respective countries</b> in the top 250: 
+          <ul>
+            <li><span style="color: #2a19ae"><b>Casper Ruud</b></span> from Norway</li>
+            <li><span style="color: #2a19ae"><b>Holger Rune</b></span> from Denmark</li>
+            <li><span style="color: #2a19ae"><b>Stefanos Tsitsipas</b></span> from Greece</li>
+          </ul> 
+
+          <br>They are very likely to be highly appreciated and supported in their own countries!
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="section-title">
+          <h3 style="color: #2a19ae;">WTA's most represented countries 🏳️</h3>
+          <p style="margin-bottom: -15px;">Now, let's see which country is <b>the most represented by the WTA players</b>:</p>
+        </div>
+        <div class="container" style="text-align: center; margin-bottom: 20px;">
+          <img src="../assets/img/articles/atp_wta_rankings/wta_countries.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+        </div>
+        <div style="text-align: center; margin-bottom: 15px;">
+          <a href="../assets/img/articles/atp_wta_rankings/wta_countries.png" download="@kevinnclas-wta-countries">
+            <button class="save-button">Save this image</button>
+          </a>
+        </div>
+        <p>
+          The most represented countries among the top 250 WTA players is <span style="color: #2a19ae"><b>USA</b></span> with <span style="color: #f54842"><b>32</b></span> players. USA is maybe the most represented country in the top 250 WTA players, but there are <b>only 2 players in top 20</b> of WTA players.  
+
+          <br><br>The most represented country in the <b>top 20 WTA-ranked players</b> is <span style="color: #2a19ae"><b>Czechia</b></span>, with <span style="color: #f54842"><b>4</b></span> players. Czechia is also the <b>3rd most represented country</b> in the top 250.
+          
+          <br>With <span style="color: #f54842"><b>25</b></span> players from <span style="color: #2a19ae"><b>Russia</b></span> in the top 25 and <b>3 players</b> in the top 20, it's the <b>2nd most represented country</b> either in the top 250 & the top 20 WTA players.  
+
+          <br><br>Only <b>one player</b> in the top 20 is her country's <b>sole representative</b> in the top 250:  
+          <ul>
+            <li><span style="color: #2a19ae"><b>Ons Jabeur</b></span> from Tunisia</li>
+          </ul>
+          She is a real superstar in her country and all around the world: as the <b>only representative of an african country in the top 20</b>, she inspires an entire continent, showing that anyone can achieve their dreams.
+          
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="section-title">
+          <h3 style="color: #2a19ae;">ATP & WTA combined most represented countries 🌎</h3> 
+          <p style="margin-bottom: -15px;">Now that we saw the ATP & WTA countries repartition, we will see how it changes if we <b>combined ATP & WTA players</b>:</p>
+        </div>
+        <div class="container" style="text-align: center; margin-bottom: 20px;">
+          <img src="../assets/img/articles/atp_wta_rankings/atp_wta_countries.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+        </div>
+        <div style="text-align: center; margin-bottom: 15px;">
+          <a href="../assets/img/articles/atp_wta_rankings/atp_wta_countries.png" download="@kevinnclas-atp-wta-countries">
+            <button class="save-button">Save this image</button>
+          </a>
+        </div>
+        <p>
+          Among the combined <b>top 250</b> ATP & WTA players, <span style="color: #2a19ae"><b>USA</b></span> is the most represented country with <span style="color: #f54842"><b>55</b></span> players. It's also the <b>second most represented country</b> in this top 20, with <span style="color: #f54842"><b>5</b></span> players. 
+          
+          <br>As we can see, <span style="color: #2a19ae"><b>Russia</b></span> is the most represented country in the top 20 ATP & WTA-ranked players combined, with <span style="color: #f54842"><b>6</b></span> players out of 40. It's the <b>third most represented country</b> in the top 250 ATP & WTA-ranked players combined.  
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="section-title">
+          <h3 style="color: #2a19ae;">ATP & WTA combined origin repartition 🌍</h3> 
+          <p style="margin-bottom: -15px;">Finally, let's see the country repartition of <b>combined ATP & WTA players</b>:</p>
+        </div>
+        <div class="container" style="text-align: center; margin-bottom: 20px;">
+          <img src="../assets/img/articles/atp_wta_rankings/atp_wta_continents.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+        </div>
+        <div style="text-align: center; margin-bottom: 15px;">
+          <a href="../assets/img/articles/atp_wta_rankings/atp_wta_continents.png" download="@kevinnclas-atp-wta-continents">
+            <button class="save-button">Save this image</button>
+          </a>
+        </div>
+        <p>
+          It's normal to find that most of the players from top 250 (and top 20) of ATP & WTA combined are from <span style="color: #2a19ae"><b>Europe</b></span>, because it's the <b>most represented continent</b>, with <span style="color: #f54842"><b>36</b></span> countries in the top 250. We have <span style="color: #f54842"><b>316</b></span> players that are European.
+          <br>However, we can see that <span style="color: #2a19ae"><b>North America</b></span> has the <b>2nd most players</b> in the top 20 and top 250, but it's the <b>2nd least represented continent</b> with only <span style="color: #f54842"><b>2</b></span> countries.
+        </p>
+      </div>
+
+    </section>
+    <!-- End Countries Section -->
+
+    <!-- ======= France Focus Section ======= -->
+    <section id="francefocus" class="francefocus">
+      <div class="container">
+        <div class="section-title" style="margin-top: -20px;">
+          <h2>Focus on France</h2>
+          <p style="font-style: italic;">As we saw previously, France is in the top 3 of the <b>most represented countries</b> in the ATP & WTA combined top 250. 
+            But I did notice some differences between France and the other two countries in the top 3, that are <b>USA and Russia</b>. Let's see this in this section:</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="section-title">
+          <h3 style="color: #2a19ae;">Focus on French players 🇫🇷</h3>
+          <p style="margin-bottom: -15px;">If you watched some matches during the World Cup, you probably noticed that there was a lot of additional time added, unlike in the regular season. 
+            <br>This happened because the FIFA's objective was to increase effective playing time. See the <b>average of additional time</b> on all the competition:</p>
+        </div>
+        <div class="container" style="text-align: center; margin-bottom: 20px;">
+          <img src="../assets/img/articles/atp_wta_rankings/france_focus.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+        </div>
+        <div style="text-align: center; margin-bottom: 15px;">
+          <a href="../assets/img/articles/atp_wta_rankings/france_focus.png" download="@kevinnclas-france-focus">
+            <button class="save-button">Save this image</button>
+          </a>
+        </div>
+        <p>
+          Even if <b>France</b> is one of the most represented country among the top 250 ATP players with <span style="color: #f54842"><b>23</b></span> players, there is <b>no French player in the top 20 ATP-ranked players</b>. 
+          <br>To compare, the others countries that are the most represented in the top 250, that are USA and Italy, have respectively 3 and 2 players in the top 20.  
+          <br>France is also the <b>4th most represented country</b> in the top 250 WTA players, with <span style="color: #f54842"><b>13</b></span> players. Unfortunately, <b>only one player</b> is in the top 20, and that's <span style="color: #2a19ae"><b>Caroline Garcia</b></span>.
+          <br>Surprisingly, as the <b>second most represented country in the top 250 combined</b>, <b>France</b> as only <span style="color: #f54842"><b>1</b></span> player in the top 20 combined rankings... In comparison, it's the same amount as <span style="color: #197aae"><b>Norway</b></span>, which as only <b>1 player</b> in the top 250 combined.
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="section-title">
+          <h3 style="color: #2a19ae;">Why France underperfoms? 🫤</h3>
+          <p style="margin-bottom: -15px;">
+            Compared to USA or Russia, we just saw the difference of performance from France when it comes to have a representative <b>among the best players in the world</b>, i.e. in the top 20 of ATP or WTA.
+            <br><br><b>But why?</b> 
+            <br>I tried to find some possible explanations, that we will discuss now. First, let's look at the <b>popularity of tennis</b> in those 3 countries:
+          </p>
+        </div>
+        <div class="container" style="text-align: center; margin-bottom: 20px;">
+          <img src="../assets/img/articles/atp_wta_rankings/tennis_popularity.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+        </div>
+        <div style="text-align: center; margin-bottom: 15px;">
+          <a href="../assets/img/articles/atp_wta_rankings/tennis_popularity.png" download="@kevinnclas-tennis-popularity">
+            <button class="save-button">Save this image</button>
+          </a>
+        </div>
+        <p>
+          I wanted to compare the popularity of tennis in those 3 countries:
+          <ul>
+            <li>As we can see, tennis is the <span style="color: #f54842"><b>2nd</b></span> most popular sport in <span style="color: #2a19ae"><b>France</b></span>.</li>
+            <li>As for <span style="color: #2a19ae"><b>USA</b></span>, it's only the <span style="color: #f54842"><b>9th</b></span> most popular sport.</li>
+            <li>Finally, for <span style="color: #2a19ae"><b>Russia</b></span>, it's also not the most popular sport, because it's only the <span style="color: #f54842"><b>8th</b></span> most popular sport.</li>
+          </ul>
+          So we can't say that France is behind USA and Russia <b>because of</b> the lack of popularity in the country.
+          <br><br>The other possible factor I wanted to check is the <b>popluation</b> of the countries. In fact, if a country is more populous, then it's more likely to have more players representing it. Because France is mostly underrepresented in <b>ATP & WTA top 20</b>, let's see the impact of population on the combined top 20:
+        </p>
+        <div class="container" style="text-align: center; margin-bottom: 20px;">
+          <img src="../assets/img/articles/atp_wta_rankings/tennis_population.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+        </div>
+        <div style="text-align: center; margin-bottom: 15px;">
+          <a href="../assets/img/articles/atp_wta_rankings/tennis_population.png" download="@kevinnclas-tennis-population">
+            <button class="save-button">Save this image</button>
+          </a>
+        </div>
+        <p>
+          As we can see, <span style="color: #2a19ae"><b>Russia</b></span> becomes now the <span style="color: #f54842"><b>1st</b></span> country in the top 20, if we consider the population size.
+          <br>However, <span style="color: #2a19ae"><b>France</b></span> stays behind, and <b>doesn't seem disadvantaged by its population size</b>.
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="section-title">
+          <h3 style="color: #2a19ae; margin-bottom: -15px;">To go further 🔍</h3>
+        </div>
+        <p>
+          I didn't really find what can explain the underperformance of France in the ATP & WTA top 20 with the data I had.  
+          <br><br>To try to explain it, it would be interesting to see, for example: among the 10 first countries in the combined top 20, how much <b>funding</b> has been set aside for tennis development? And how popular is tennis among <b>young people</b> in those countries to develop future talents?
+          <br>I tried to look those information, but it was very hard to find data about some countries for now. For example, I just found that <b>in 2019, the United States Tennis Association (USTA) announced a five-year, $20 million investment to support the development of young players</b>.
+          <br><br>To finish, let's remember that <b>great players can come from everywhere</b>, and it's not where you were born that will make you a great tennis player. <b>Luck</b> is also an important factor that we must think about, and that can't really be measurable.
+        </p>
+      </div>
+
+    </section>
+    <!-- End France Focus Section -->
+
+    <!-- ======= Thank you for reading ======= -->
+    <section id="thankyou" class="thankyou">
+      <div class="container">
+        <div class="section-title" style="margin-top: -20px;">
+          <h2>Thank you for reading !</h2>
+          <p style="margin-bottom: -20px;">I did this project because I wanted to discover more about <b>tennis</b> with <b>data analytics</b>. It was an interesting first approach to the subject, and perhaps I'll continue with the data analysis of tennis with the analysis of a player, or a tournament.. 
+            <br>If you have any suggestion about the subject or this analysis, <b>feel free to contact me</b>!
+            <br> Here are my various sources <i>(<a href="https://github.com/JeffSackmann" target="_blank">Jeff Sackmann's data</a>, <a href="https://www.statista.com" target="_blank">Statista</a>)</i>.
+            <br>You can check the notebook where I did all the data analysis right <a href="https://github.com/kevinnclas/ATP-WTA-DataAnalysis/blob/main/tennis_analysis.ipynb" target="_blank">here</a>. Thank you very much for reading me and my work, I hope you enjoyed it!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div id="contact-me" class="container">
+      <h4>Kevin Nicolas</h4>
+      <p>Feel free to contact me!</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/kevinnclas/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://github.com/kevinnclas" target="_blank" class="git"><i class="bx bxl-github"></i></a>
+        <a href="https://www.instagram.com/kevinnclas/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+      </div>
+
+  </main>
+  <!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>iPortfolio</span></strong>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/typed.js/typed.min.js"></script>
+  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
