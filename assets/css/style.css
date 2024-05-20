@@ -798,6 +798,18 @@ section {
 .thankyou p {
   text-align: justify;
 }
+
+/*--------------------------------------------------------------
+# Premier League 2023 - 2024 article
+--------------------------------------------------------------*/
+.overall p {
+  text-align: justify;
+}
+
+.teams p {
+  text-align: justify;
+}
+
 .save-button {
   background-color: #1f75d8;
   color: white;
