@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>2023-2024 Premier League Season: a Data Analysis</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio - v3.9.0
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+
+<body>
+
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+  
+    <!-- ======= Header ======= -->
+    <header id="header">
+      <div class="d-flex flex-column">
+  
+        <div class="profile">
+          <img src="../assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+          <h1 class="text-light"><a href="../index.html">Kevin NICOLAS</a></h1>
+          <div class="social-links mt-3 text-center">
+            <a href="https://www.linkedin.com/in/kevinnclas/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            <a href="https://github.com/kevinnclas" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+            <a href="https://www.instagram.com/kevinnclas/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+          </div>
+        </div>
+  
+        <nav id="navbar" class="nav-menu navbar">
+          <ul>
+            <li><a href="../index.html" class="nav-link scrollto active"><i class="bx bx-home custom-color-home-article"></i> <span>Home</span></a></li>
+            <li><a href="#overall" class="nav-link scrollto"><i class="bx bx-bar-chart-alt-2"></i> <span>Overall</span></a></li>
+            <li><a href="#players" class="nav-link scrollto"><i class="bx bx-run"></i> <span>Players</span></a></li>
+            <li><a href="#teams" class="nav-link scrollto"><i class="bx bx-shield-quarter"></i> <span>Teams</span></a></li>
+          </ul>
+        </nav><!-- .nav-menu -->
+      </div>
+    </header><!-- End Header -->
+  
+    <main id="main">
+  
+      <!-- ======= Breadcrumbs ======= -->
+      <section id="breadcrumbs" class="breadcrumbs">
+        <div class="container">
+  
+          <div class="d-flex justify-content-between align-items-center">
+            <ol>
+              <li><a href="../index.html">Home</a></li>
+              <li>2023-2024 Premier League Season - Data Analysis</li>
+            </ol>
+          </div>
+  
+        </div>
+      </section><!-- End Breadcrumbs -->
+  
+      <!-- ======= Intro Section ======= -->
+      <section id="intro" class="intro">
+        <div class="container">
+          <img src="../assets/img/articles/2023-2024-premier-league/wallpaper.jpg" class="img-fluid" alt="" width="auto" data-aos="fade" style="border-radius: 5px;">
+          <div class="section-title" style=" margin-top: 20px; margin-bottom: -20px;">
+            <h1 style="text-align: center;">2023-2024 Premier League Season</h1>
+          </div>
+          <div class="container">
+            <p style="text-align: left; font-style: italic;">Let's take a look back at the <b>2023-2024 Premier League season</b>: 
+                a last-minute title race between the season's top 2 teams, and a fight to stay in the league at the bottom.</p>
+            <p style="color: #AB1B39; text-align: center;"><b>2024 - Kevin Nicolas</b></p>
+          </div>
+        </div>
+        <div class="container" style="margin-top: 10px;">
+          <p style="text-align: left;">In this article, we will see overall statistics about football, with sub-categories about:</p>
+            <ul style="font-style: italic; margin-top: 10px;">
+              <li>Overall</li>
+              <li>Players</li>
+              <li>Teams</li>
+            </ul>
+        </div>
+      </section>
+      <!-- End Intro Section -->
+  
+      <!-- ======= Overall Section ======= -->
+      <section id="overall" class="overall">
+        <div class="container">
+          <div class="section-title" style="margin-top: -20px;">
+            <h2>Overall</h2>
+            <p style="font-style: italic;">First, let's look at overall statistics about this season such as the number of goals per match in average, the number of type of goals or the most prolific week.</p>
+          </div>
+        </div>
+        
+        <div class="container">
+          <div class="section-title">
+            <h3 style="color: #2a19ae;">Scorers' starters/subs repartition 🔁</h3>
+            <p style="margin-bottom: -15px;">Sometimes, a substitute can change the match. I wanted to see the repartition of goals scored by starters and substitutes. 
+              Also, I wanted to see this repartition within teams, and see <b>which team has more goals scored by substitutes</b>, and inversely:</p>
+          </div>
+          <div class="container" style="text-align: center; margin-bottom: 20px;">
+            <img src="../assets/img/articles/2023-2024-premier-league/must_subs_scoring.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+          </div>
+          <div style="text-align: center; margin-bottom: 15px;">
+            <a href="../assets/img/articles/2023-2024-premier-league/must_subs_scoring.png" download="@kevinnclas-most-scoring-subs-PL2324">
+              <button class="save-button">Save this image</button>
+            </a>
+          </div>
+          <p>
+            <span style="color: #2a19ae"><b>Newcastle Utd</b></span> is the team with the most goals scored by subs, with a total of <span style="color:#f54842"><b>14 goals</b></span>, which represent more than <b>16%</b> of their goals scored. 
+            <br>The team with the fewest substitutes scoring a goal is <span style="color: #2a19ae"><b>West Ham</b></span>, with only <span style="color:#f54842"><b>3 goals</b></span>.</p>
+        </div>
+
+        <div class="container">
+          <div class="section-title">
+            <h3 style="color: #2a19ae;">Type of goals scored depending scenario 🚩</h3>
+            <p style="margin-bottom: -15px;">A goal can be scored in <b>several scenarios</b>: during the course of play, a free kick or a corner. 
+              <br>Let's see the breakdown of all the goals scored:</p>
+          </div>
+          <div class="container" style="text-align: center; margin-bottom: 20px;">
+            <img src="../assets/img/articles/2023-2024-premier-league/type_of_goals.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+          </div>
+          <div style="text-align: center; margin-bottom: 15px;">
+            <a href="../assets/img/articles/2023-2024-premier-league/type_of_goals.png" download="@kevinnclas-type-of-goals-PL2324">
+              <button class="save-button">Save this image</button>
+            </a>
+          </div>
+          <p>
+            Logically, the most goals were scored <b>during the game</b>, with more than <span style="color: #2a19ae"><b>80% of all scored goals</b></span>. 
+            <br>However, we note that <span style="color:#f54842"><b>95 goals</b></span> were scored from <b>penalties</b>, which is not far from all the other goals scored from set pieces, excluding free kicks and penalty kicks (<b>131 goals</b>).
+            <br>We will see the team distribution of these types of goals a little later.</p>
+        </div>
+
+        <div class="container">
+          <div class="section-title">
+            <h3 style="color: #2a19ae;">Most prolific gameweek 🤑</h3>
+            <p style="margin-bottom: -15px;">Every weekend, we had the chance to experience memorable matches. But let's see <b>which gameweek had the most goals scored</b>:</p>
+          </div>
+          <div class="container" style="text-align: center; margin-bottom: 20px;">
+            <img src="../assets/img/articles/2023-2024-premier-league/goals_by_week.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+          </div>
+          <div style="text-align: center; margin-bottom: 15px;">
+            <a href="../assets/img/articles/2023-2024-premier-league/goals_by_week.png" download="@kevinnclas-goals_by_week">
+              <button class="save-button">Save this image</button>
+            </a>
+          </div>
+          <p>
+            With <span style="color:#f54842"><b>45 goals</b></span>, the most prolific gameweek is <span style="color: #2a19ae"><b>Gameweek 23</b></span>.
+            <br>It happened at the beginning of February, and we can remember a few results: 
+            <li>The <b>4-4</b> draw between Newcastle and Luton</li>
+            <li>The <b>5-0</b> win by Aston Villa at Sheffield Utd</li>
+            <li>The Arsenal clash against Liverpool, ending in a <b>3-1</b> victory for the Gunners. Knowing how the season ended, this victory for Arsenal made a huge difference!</li>
+            <br>We can see that the average goals scored each gameweek is approximatively <span style="color:#f54842"><b>33 goals</b></span>, which is one of the <b>highest average in top 5 leagues in Europe</b>.
+          </p>
+        </div>
+        
+      </section>
+      <!-- End Overall Section -->
+
+      <!-- ======= Players Section ======= -->
+      <section id="players" class="players">
+        <div class="container">
+          <div class="section-title" style="margin-top: -20px;">
+            <h2>Players</h2>
+            <p style="font-style: italic;">Here are some of the players who have impressed this season, based on their sportive <b>performances</b>.</p>
+          </div>
+        </div>
+        
+        <div class="container">
+          <div class="section-title">
+            <h3 style="color: #2a19ae;">Most decisive player 💯</h3>
+            <p style="margin-bottom: -15px;">In this section, I wanted to highlight the most decisive players <b>offensively</b>, who is the player who <b>scored</b>, made an <b>assist</b> or delivered <b>a pass before an assist</b> the most, i.e. the player who were closely involved in an action leading to a goal:</p>
+          </div>
+          <div class="container" style="text-align: center; margin-bottom: 20px;">
+            <img src="../assets/img/articles/2023-2024-premier-league/most_decisive_player.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+          </div>
+          <div style="text-align: center; margin-bottom: 15px;">
+            <a href="../assets/img/articles/2023-2024-premier-league/most_decisive_player.png" download="@kevinnclas-most-decisive-player-PL2324">
+              <button class="save-button">Save this image</button>
+            </a>
+          </div>
+          <p>
+            Leading this rank is <span style="color: #2a19ae"><b>Cole Palmer</b></span>, who made an incredible season with <span style="color:#f54842"><b>47 goals involved</b></span> in the <b>77 goals</b> scored by Chelsea. 
+            <br><b>More than 3 out of 5 goals scored by Chelsea involved Palmer</b>, demonstrating his importance to his team's success.
+            <br><span style="color: #4287f5"><b>Ollie Watkins</b></span>, who was closely involved in over <span style="color:#f54842"><b>59%</b></span> of Vilains' goals, could not make the difference on his own for a place on the podium, as Aston Villa finished <b>4th</b> in the table. 
+        </div>
+
+        <div class="container">
+          <div class="section-title">
+            <h3 style="color: #2a19ae;">Best scorer & player with most assists 🏆</h3>
+            <p style="margin-bottom: -15px;">Let's find out who was the <b>best scorer</b> and the <b>player who made the most assists</b> in the league this season:</p>
+          </div>
+          <div class="container" style="text-align: center; margin-bottom: 20px;">
+            <img src="../assets/img/articles/2023-2024-premier-league/best_scorer_and_assists.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+          </div>
+          <div style="text-align: center; margin-bottom: 15px;">
+            <a href="../assets/img/articles/2023-2024-premier-league/best_scorer_and_assists.png" download="@kevinnclas-best-scorer-and-assists-PL2324">
+              <button class="save-button">Save this image</button>
+            </a>
+          </div>
+          <p>
+            With <span style="color:#f54842"><b>27 goals</b></span>, <span style="color: #2a19ae"><b>Erling Haaland</b></span> is the owner of this title, with an average <b>PSxG* of 0,68</b>. 
+            <br><b>*PSxG</b>: <i>The weaker PSxG is, the more unexpected and therefore beautiful the goals. On the contrary, the closer PSxG is to 1, the 'easier' the goals are to score.</i> 
+            <br><br>Just right behind him, we have <span style="color:#4287f5">Cole Palmer</span> with <b>22 goals</b> and <span style="color:#4287f5">Alexander Isak</span> with <b>21 goals</b>. 
+            <br>The English and Swedish football teams' attack have a bright future ahead of them with these two players!
+            <br><br>Concercing assists, the best player with <span style="color:#f54842"><b>13 assists</b></span> is <span style="color: #2a19ae"><b>Ollie Watkins</b></span>. 
+            We must not forget that he is the striker and also the <b>best scorer of his team</b>, which is such a great performance to be at this position for him. He was even named playmaker of ther season! 👏
+          </p>
+        </div>
+
+        <div class="container">
+          <div class="section-title">
+            <h3 style="color: #2a19ae;">Best scorer & assist combined (G+A) 🏆</h3>
+            <p style="margin-bottom: -15px;">Now let's add assists to goals scored, to have the player who <b>delivered the most assists and scored the most goals</b> this season:</p>
+          </div>
+          <div class="container" style="text-align: center; margin-bottom: 20px;">
+            <img src="../assets/img/articles/2023-2024-premier-league/best_player_ga.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+          </div>
+          <div style="text-align: center; margin-bottom: 15px;">
+            <a href="../assets/img/articles/2023-2024-premier-league/best_player_ga.png" download="@kevinnclas-best-player-ga-PL2324">
+              <button class="save-button">Save this image</button>
+            </a>
+          </div>
+          <p>
+            What a season this player made: <span style="color: #2a19ae"><b>Cole Palmer</b></span>, with <span style="color:#f54842"><b>33 G+A</b></span> (22 goals and 11 assists). 
+            <br>The English player was really at the top of his art this season, followed very closely by another English player, <span style="color:#4287f5">Ollie Watkins</span> with <span style="color:#f54842"><b>32 G+A</b></span> (19 goals and 13 assists). 
+        </div>
+        
+        <div class="container">
+          <div class="section-title">
+            <h3 style="color: #2a19ae;">Effectiveness 🚦</h3>
+            <p style="margin-bottom: 15px;">This graph will allow us to measure the <b>efficiency of all the players in the league</b>:</p>
+            <ul>
+              <li>I've chosen to calculate this indicator according to two criteria: the first is <b>finishing efficiency</b>, which is the difference between the number of goals scored and the number of expected goals .</li>
+                <ul>
+                  <li>Thus, a player with a positive result scores more often than expected.</li>
+                </ul>
+              <li>The other criterion concerns <b>altruism efficiency</b>, in particular the player's ability to provide a good pass that can end up being decisive. This is done in the same way as the other criterion, by taking the difference between the number of assists made and the number of expected assists.</li>
+              <ul>
+                <li>Thus, a player with a positive result makes more assists than expected.</li>
+              </ul>
+            </ul>
+          </div>
+          <div class="container" style="text-align: center; margin-bottom: 20px;">
+            <img src="../assets/img/articles/2023-2024-premier-league/effectiveness_players.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+          </div>
+          <div style="text-align: center; margin-bottom: 15px;">
+            <a href="../assets/img/articles/2023-2024-premier-league/effectiveness_players.png" download="@kevinnclas-effectiveness-players-PL2324">
+              <button class="save-button">Save this image</button>
+            </a>
+          </div>
+          <p>
+            To make it easier to read the results, I've divided my graph into <b>4 categories</b>:
+            <ul>
+              <li>The <span style="color:#2c840e"><b>Golden Boys</b></span>, who are the most efficient players in terms of goals and assists.</li>
+              <ul>
+                <li>We can highlight some players who made a tremendous season for their team: <b>Rodri</b>, <b>Declan Rice</b> or <b>Ollie Watkins</b>.
+              </ul>
+              <li>The <span style="color:#F78902"><b>Scorers</b></span>, who are more efficient in terms of goals scored, but less efficient than expected in terms of assists.</li>
+              <ul>
+                <li>We can highlight some players who made a huge difference for scoring for their team: <b>Phil Foden</b>, <b>Heug-min Son</b> or <b>Cole Palmer</b>.
+              </ul>
+              <li>The <span style="color:#F7D002"><b>Altruists</b></span>, who are more efficient in terms of assists, but less efficient than expected in terms of goals scored.</li>
+              <ul>
+                <li>We can highlight some players who were decisive for their teammates and for their team: <b>Pedro Neto</b>, <b>James Maddison</b> or <b>Pascal Groß</b>.
+              </ul>
+              <li>Finally, the <span style="color:#f70202"><b>Struglers</b></span>, who are less effective than expected in terms of goals scored and assists.</li>
+              <ul>
+                <li>We can highlight some players who were lacking effectiveness and should have been more decisive for their team: <b>Enzo Fernández</b>, <b>Antony</b> or <b>Mohamed Salah</b>.
+              </ul>
+            </ul>
+          </p>
+        </div>
+
+        <div class="container">
+          <div class="section-title">
+            <h3 style="color: #2a19ae;">Goalkeepers 🧤</h3>
+            <h4 style="color: #2a19ae;">Most saves per game played</h4>
+            <p style="margin-bottom: -15px;">For all the goalkeepers who played <b>5 matches at least</b>, let's see who has the best saves per game played ratio:</p>
+          </div>
+          <div class="container" style="text-align: center; margin-bottom: 20px;">
+            <img src="../assets/img/articles/2023-2024-premier-league/best_goalkeeper.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+          </div>
+          <div style="text-align: center; margin-bottom: 15px;">
+            <a href="../assets/img/articles/2023-2024-premier-league/best_goalkeeper.png" download="@kevinnclas-best-goalkeeper-PL2324">
+              <button class="save-button">Save this image</button>
+            </a>
+          </div>
+          <p>
+            The best goalkeeper in terms of saves per match played is <span style="color: #2a19ae"><b>Arijanet Muric</b></span>, with <span style="color:#f54842"><b>62 saves for 10 games played</b></span>.
+            <br>Also, he has the best saves percentage ([shots on target against - goals against]/shots on target against) in the league, with <b>80.8% of saves</b>.
+            <br><br>Logically, the top goalkeepers are from <b>teams that conceded a lot of goals</b>, like Sheffield Utd, Luton Town or Burnley. 
+            <br>On the other hand, the 3 last goalkeepers are from the 2 best teams in the league, i.e. Arsenal and Manchester City.
+          </p>
+
+          <div class="section-title">
+            <h4 style="color: #2a19ae;">Goalkeeping efficiency</h4>
+            <p style="margin-bottom: -15px;">For each goalkeeper, I calculated the difference between the total <b>number of goals scored against</b> and the sum of the <b>expected goals (PSxG) of the goals they conceded</b>.  
+              <br>This determined the goalkeeping efficiency indicator for all the goalkeepers who played <b>5 matches at least</b>, so let's see which goalkeeper was the most efficient:</p>
+          </div>
+          <div class="container" style="text-align: center; margin-bottom: 20px;">
+            <img src="../assets/img/articles/2023-2024-premier-league/most_efficient_goalkeeper.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+          </div>
+          <div style="text-align: center; margin-bottom: 15px;">
+            <a href="../assets/img/articles/2023-2024-premier-league/most_efficient_goalkeeper.png" download="@kevinnclas-most-effective-goalkeeper-PL2324">
+              <button class="save-button">Save this image</button>
+            </a>
+          </div>
+          <p>
+            With <b>9 matches played</b>, the best goalkeeper in terms of efficiency is <span style="color: #2a19ae"><b>Stefan Ortega</b></span>, with an efficiency indicator of <span style="color:#f54842"><b>2.59</b></span>.
+            <br>Not surprising to see the Citizen goalkeeper at the top of this ranking, because of the great season of Manchester City.
+          </p>
+        </div>
+
+        <div class="container">
+          <div class="section-title">
+            <h3 style="color: #2a19ae;">Player who dribbles the most ⛹️</h3>
+            <p style="margin-bottom: -15px;">Let's highlight who is the <b>best dribbler in the Premier League</b> now!</p>
+            <br>💡 <i>The indicator measures the number of carries that move the ball towards the opponent's goal line at least 10 yards from its furthest point in the last six passes, or any carry into the penalty area. It excludes carries which end in the defending 50% of the pitch.</i>
+          </div>
+          <div class="container" style="text-align: center; margin-bottom: 20px;">
+            <img src="../assets/img/articles/2023-2024-premier-league/best_dribbler.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+          </div>
+          <div style="text-align: center; margin-bottom: 15px;">
+            <a href="../assets/img/articles/2023-2024-premier-league/best_dribbler.png" download="@kevinnclas-best-dribbler-PL2324">
+              <button class="save-button">Save this image</button>
+            </a>
+          </div>
+          <p>
+            With <span style="color:#f54842"><b>218 progressive carries</b></span> in <b>29 matches (1595 minutes) played</b>, the player who dribbles the most is <span style="color: #2a19ae"><b>Jeremy Doku</b></span>, who plays for <b>Manchester City</b>. 
+            <br>The Belgian who just arrived this season at City is already showing himself in the League, by being one of the most percutive player and a real threat for opponent's defense.
+          </p>
+        </div>
+
+        <div class="container">
+          <div class="section-title">
+            <h3 style="color: #2a19ae;">Player who makes the most progressive passes 🏌️‍♂️</h3>
+            <p style="margin-bottom: -15px;">Now let's see who was the <b>passer who most advanced his team's play</b>:</p>
+            <br>💡 <i>The indicator measures the number of completed passes that move the ball towards the opponent's goal line at least 10 yards from its furthest point in the last six passes, or any completed pass into the penalty area. It excludes passes from the defending 40% of the pitch.</i>
+          </div>
+          <div class="container" style="text-align: center; margin-bottom: 20px;">
+            <img src="../assets/img/articles/2023-2024-premier-league/best_forward_passer.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+          </div>
+          <div style="text-align: center; margin-bottom: 15px;">
+            <a href="../assets/img/articles/2023-2024-premier-league/best_forward_passer.png" download="@kevinnclas-best-forward-passer-PL2324">
+              <button class="save-button">Save this image</button>
+            </a>
+          </div>
+          <p>
+            With <span style="color:#f54842"><b>376 progressive passes</b></span> in <b>34 matches (2931 minutes) played</b>, the player who delivered the most progressive passes is <span style="color: #2a19ae"><b>Rodri</b></span>, who also plays for <b>Manchester City</b>. 
+            <br>Being one of the player who was used the most by Pep Guardiola, we know understand why, regarding the importance of this player in City's midfield!
+          </p>
+        </div>
+
+        <div class="container">
+          <div class="section-title">
+            <h3 style="color: #2a19ae;">Player who creates the most spaces to receive progressive passes 🏃‍♂️‍➡️</h3>
+            <p style="margin-bottom: -15px;">Movement to receive great passes is very important in football. Let's see which player <b>created the most spaces to receive progressive passes</b>:</p>
+            <br>💡 <i>The indicator measures the number of received completed passes that move the ball towards the opponent's goal line at least 10 yards from its furthest point in the last six passes, or any completed pass into the penalty area. It excludes passes from the defending 40% of the pitch.</i>
+          </div>
+          <div class="container" style="text-align: center; margin-bottom: 20px;">
+            <img src="../assets/img/articles/2023-2024-premier-league/best_space_creator.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+          </div>
+          <div style="text-align: center; margin-bottom: 15px;">
+            <a href="../assets/img/articles/2023-2024-premier-league/best_space_creator.png" download="@kevinnclas-best-space-creator-PL2324">
+              <button class="save-button">Save this image</button>
+            </a>
+          </div>
+          <p>
+            With <span style="color:#f54842"><b>508 progressive passes received</b></span> in <b>35 matches (2919 minutes) played</b>, the player who created the most spaces for passes is <span style="color: #2a19ae"><b>Bukayo Saka</b></span>, who plays for <b>Arsenal</b>. 
+            <br>He was one of the major player for the Gunners this season, and it's not surprising to see him at this position. 
+          </p>
+          <p style="text-align: center;">
+            <b><br><br>We saw that the best players of the league were either from Arsenal or Manchester City, what a battle for the title!</b>
+          </p> 
+        </div>
+
+      </section>
+      <!-- End Players Section -->
+  
+      <!-- ======= Teams Section ======= -->
+      <section id="teams" class="teams">
+        <div class="container">
+          <div class="section-title" style="margin-top: -20px;">
+            <h2>Teams</h2>
+            <p style="font-style: italic;">Now, we will focus on teams who have impacted this 2023-2024 Season and on others who haven't, based on their sportive <b>performances</b>.</p>
+          </div>
+        </div>
+  
+        <div class="container">
+          <div class="section-title">
+            <h3 style="color: #2a19ae;">Goals Analysis ⚽️</h3>
+            <h4 style="color: #2a19ae;">Pitch location</h4>
+            <p style="margin-bottom: -15px;">Let's take a look at the distribution of the distance between goals scored and conceded, i.e. the <b>number of goals scored and conceded outside and inside the box</b>:</p>
+          </div>
+          <div class="container" style="text-align: center; margin-bottom: 20px;">
+            <img src="../assets/img/articles/2023-2024-premier-league/pitch_location.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+          </div>
+          <div style="text-align: center; margin-bottom: 15px;">
+            <a href="../assets/img/articles/2023-2024-premier-league/pitch_location.png" download="@kevinnclas-goals-pitch-location-PL2324">
+              <button class="save-button">Save this image</button>
+            </a>
+          </div>
+          <p>
+            A quick summary on this graph:
+            <ul>
+              <li>
+                The teams that <b>scored the most in the surface</b>:
+                <ul>
+                  <li>
+                    <b>Arsenal</b> - 79 goals
+                  </li>
+                  <li>
+                    <b>Manchester City</b> - 78 goals
+                  </li>
+                  <li>
+                  <b>Newcastle Utd</b> - 76 goals
+                  </li>
+                </ul>
+              </li>
+              <li>
+                The teams that <b>scored the most out the surface</b>:
+                <ul>
+                  <li>
+                    <b>Manchester City</b> - 16 goals
+                  </li>
+                  <li>
+                    <b>Liverpool</b> - 12 goals
+                  </li>
+                  <li>
+                    <b>Burnley & Crystal Palace</b> - 11 goals
+                  </li>
+                </ul>
+              </li>
+              <li>
+                The teams that <b>conceded the most in the surface</b>:
+                <ul>
+                  <li>
+                    <b>Sheffield Utd</b> - 85 goals
+                  </li>
+                  <li>
+                    <b>Luton Town</b> - 72 goals
+                  </li>
+                  <li>
+                    <b>Burnley</b> - 62 goals
+                  </li>
+                </ul>
+              </li>
+              <li>
+                The teams that <b>conceded the most out the surface</b>:
+                <ul>
+                  <li>
+                    <b>Burnley and Fulham</b> - 13 goals
+                  </li>
+                  <li>
+                    <b>Sheffield Utd</b> - 12 goals
+                  </li>
+                  <li>
+                    <b>Newcastle Utd</b> - 11 goals
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </p>
+
+          <div class="section-title">
+            <h4 style="color: #2a19ae;">Action type</h4>
+            <p style="margin-bottom: -15px;">Let's take a look at the distribution of the type of goals scored and conceded by each team, i.e. the <b>number of goals scored and conceded depending the goal's motion</b>:</p>
+          </div>
+          <div class="container" style="text-align: center; margin-bottom: 20px;">
+            <img src="../assets/img/articles/2023-2024-premier-league/action_type.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+          </div>
+          <div style="text-align: center; margin-bottom: 15px;">
+            <a href="../assets/img/articles/2023-2024-premier-league/action_type.png" download="@kevinnclas-goals-action-type-PL2324">
+              <button class="save-button">Save this image</button>
+            </a>
+          </div>
+          <p>
+            A quick summary on this graph:
+            <ul>
+              <li>
+                For <b>in game goals</b>:
+                <ul>
+                  <li>
+                    The team who scored the most is <span style="color: #2a19ae"><b>Manchester City</b></span> with <span style="color:#f54842">79 goals</span>
+                  </li>
+                  <li>
+                    The team who conceded the most is <span style="color: #2a19ae"><b>Sheffield Utd</b></span> with <span style="color:#f54842">87 goals</span>
+                  </li>
+                </ul>
+              </li>
+            
+              <li>
+                For <b>set piece goals</b>:
+                <ul>
+                  <li>
+                    The team who scored the most is <span style="color: #2a19ae"><b>Arsenal</b></span> with <span style="color:#f54842">14 goals</span>
+                  </li>
+                  <li>
+                    The team who conceded the most is <span style="color: #2a19ae"><b>Sheffield Utd</b></span> with <span style="color:#f54842">12 goals</span>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                For <b>penalty kick goals</b>:
+                <ul>
+                  <li>
+                    The team who scored the most is <span style="color: #2a19ae"><b>Chelsea</b></span> with <span style="color:#f54842">11 goals</span>
+                  </li>
+                  <li>
+                    The teams who conceded the most are <span style="color: #2a19ae"><b>Everton, Fulham, West Ham and Wolves</b></span> with <span style="color:#f54842">8 goals</span>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                For <b>free kick goals</b>:
+                <ul>
+                  <li>
+                    The team who scored the most is <span style="color: #2a19ae"><b>Manchester City</b></span> with <span style="color:#f54842">3 goals</span>
+                  </li>
+                  <li>
+                    The team who conceded the most is <span style="color: #2a19ae"><b>Fulham</b></span> with <span style="color:#f54842">3 goals</span>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </p>
+
+          <div class="section-title">
+            <h4 style="color: #2a19ae;">Body part</h4>
+            <p style="margin-bottom: -15px;">Now, let's take a look at the distribution of the <b>body part with which goals were scored and conceded by each team</b>:</p>
+          </div>
+          <div class="container" style="text-align: center; margin-bottom: 20px;">
+            <img src="../assets/img/articles/2023-2024-premier-league/body_part.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+          </div>
+          <div style="text-align: center; margin-bottom: 15px;">
+            <a href="../assets/img/articles/2023-2024-premier-league/body_part.png" download="@kevinnclas-goals-body-part-PL2324">
+              <button class="save-button">Save this image</button>
+            </a>
+          </div>
+          <p>
+            A quick summary on this graph:
+            <ul>
+              <li>
+                For <b>goals scored with foot</b>:
+                <ul>
+                  <li>
+                    The team who scored the most is <span style="color: #2a19ae"><b>Manchester City</b></span> with <span style="color:#f54842">81 goals</span>
+                  </li>
+                  <li>
+                    The team who conceded the most is <span style="color: #2a19ae"><b>Sheffield Utd</b></span> with <span style="color:#f54842">81 goals</span>
+                  </li>
+                </ul>
+              </li>
+            
+              <li>
+                For <b>goals scored with head</b>:
+                <ul>
+                  <li>
+                    The team who scored the most is <span style="color: #2a19ae"><b>Arsenal</b></span> with <span style="color:#f54842">16 goals</span>
+                  </li>
+                  <li>
+                    The team who conceded the most is <span style="color: #2a19ae"><b>Brentford</b></span> with <span style="color:#f54842">21 goals</span>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </p>
+
+          <div class="section-title">
+            <h4 style="color: #2a19ae;">Home & away</h4>
+            <p style="margin-bottom: -15px;">Finally, let's take a look at the distribution of the <b>goals scored, at home or away, by each team</b>:</p>
+          </div>
+          <div class="container" style="text-align: center; margin-bottom: 20px;">
+            <img src="../assets/img/articles/2023-2024-premier-league/home_away.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+          </div>
+          <div style="text-align: center; margin-bottom: 15px;">
+            <a href="../assets/img/articles/2023-2024-premier-league/home_away.png" download="@kevinnclas-goals-home-away-PL2324">
+              <button class="save-button">Save this image</button>
+            </a>
+          </div>
+          <p>
+            The team who scored the most at home is <span style="color: #2a19ae"><b>Manchester City </b></span> with <span style="color:#f54842">51 goals</span>.
+            <br>The team who scored the most away is also <span style="color: #2a19ae"><b>Manchester City</b></span> with <span style="color:#f54842">45 goals</span>, which is a huge performance, because it's almost as much as at home.
+          </p>
+        </div>
+
+        <div class="container">
+          <div class="section-title">
+            <h3 style="color: #2a19ae;">Best offense 🤾‍♂️</h3>
+            <p style="margin-bottom: -15px;">Which team <b>scored the most goals</b> this season? Let's find out:</p>
+          </div>
+          <div class="container" style="text-align: center; margin-bottom: 20px;">
+            <img src="../assets/img/articles/2023-2024-premier-league/best_offense.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+          </div>
+          <div style="text-align: center; margin-bottom: 15px;">
+            <a href="../assets/img/articles/2023-2024-premier-league/best_offense.png" download="@kevinnclas-best-offense-PL2324">
+              <button class="save-button">Save this image</button>
+            </a>
+          </div>
+          <p>
+            With <span style="color:#f54842"><b>96 goals scored</b></span>, the best team offense in the league is <span style="color: #2a19ae"><b>Manchester City</b></span>, with an average of 2.52 goals per match.
+            <br>They  are also the best attack playing at home with <b>51 goals</b>, and away with <b>45 goals</b>. The Citizens were just unplayable this season!
+          </p>
+        </div>
+
+        <div class="container">
+          <div class="section-title">
+            <h3 style="color: #2a19ae;">Best defense 🛡️</h3>
+            <p style="margin-bottom: -15px;">Now, let's see which team <b>conceded the least goals</b> this season:</p>
+          </div>
+          <div class="container" style="text-align: center; margin-bottom: 20px;">
+            <img src="../assets/img/articles/2023-2024-premier-league/best_defense.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+          </div>
+          <div style="text-align: center; margin-bottom: 15px;">
+            <a href="../assets/img/articles/2023-2024-premier-league/best_defense.png" download="@kevinnclas-best-defense-PL2324">
+              <button class="save-button">Save this image</button>
+            </a>
+          </div>
+          <p>
+            With only <span style="color:#f54842"><b>29 goals conceded</b></span>, Arsenal are the <b>best defense</b> in the league. They only conceded 16 goals at home, and 13 away.
+          </p>
+        </div>
+
+        <div class="container">
+          <div class="section-title">
+            <h3 style="color: #2a19ae;">Results home/away 📊</h3>
+            <p style="margin-bottom: -15px;">Let's look the overview of the results of the teams this season, i.e. the <b>number of wins, draws and loses for each team</b>:</p>
+          </div>
+          <div class="container" style="text-align: center; margin-bottom: 20px;">
+            <img src="../assets/img/articles/2023-2024-premier-league/results_home_away.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+          </div>
+          <div style="text-align: center; margin-bottom: 15px;">
+            <a href="../assets/img/articles/2023-2024-premier-league/results_home_away.png" download="@kevinnclas-results-home-away-PL2324">
+              <button class="save-button">Save this image</button>
+            </a>
+          </div>
+          <p>
+            Let's have a quick summary on some teams:
+            <ul>
+              <li>
+                <span style="color: #2a19ae"><b>Manchester City</b></span><span style="color:#f54842"> never lost at home</span>
+              </li>
+              <li>
+                <span style="color: #2a19ae"><b>Tottenham</b></span><span style="color:#f54842"> never drawn at home</span>
+              </li>
+              <li>
+                <span style="color: #2a19ae"><b>Sheffield Utd</b></span> only <span style="color:#f54842">won once away</span> 
+              </li>
+              <li>
+                <span style="color: #2a19ae"><b>Burnley</b></span> <span style="color:#f54842">won more away than at home</span>, and <span style="color:#f54842">lost more at home than away</span>
+              </li>
+            </ul>
+          </p>
+        </div>
+
+        <div class="container">
+          <div class="section-title">
+            <h3 style="color: #2a19ae;">Discipline 🟨🟥</h3>
+            <h4 style="color: #2a19ae;">Yellow cards</h4>
+            <p>Let's find out <b>which team received the most yellow cards</b>:</p>
+          </div>
+          <div class="container" style="text-align: center; margin-bottom: 20px;">
+            <img src="../assets/img/articles/2023-2024-premier-league/yellow_cards.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+          </div>
+          <div style="text-align: center; margin-bottom: 15px;">
+            <a href="../assets/img/articles/2023-2024-premier-league/yellow_cards.png" download="@kevinnclas-yellow-cards-PL2324">
+              <button class="save-button">Save this image</button>
+            </a>
+          </div>
+          <p>
+            With <span style="color:#f54842"><b>109 yellow cards</b></span>, <span style="color: #2a19ae"><b>Chelsea</b></span> received the most yellow cards this season with more than <b>2.87 yellow cards per game</b>. 
+            <br>The team that received the least yellow cards is <span style="color:#4287f5">Manchester City</span> with <b>53 yellow cards</b>.
+          </p>
+
+          <div class="section-title">
+            <h4 style="color: #2a19ae;">Red cards</h4>
+            <p>Let's find out <b>which team received the most red cards</b>:</p>
+          </div>
+          <div class="container" style="text-align: center; margin-bottom: 20px;">
+            <img src="../assets/img/articles/2023-2024-premier-league/red_cards.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+          </div>
+          <div style="text-align: center; margin-bottom: 15px;">
+            <a href="../assets/img/articles/2023-2024-premier-league/red_cards.png" download="@kevinnclas-red-cards-PL2324">
+              <button class="save-button">Save this image</button>
+            </a>
+          </div>
+          <p>
+            With <span style="color:#f54842"><b>7 red cards</b></span>, <span style="color: #2a19ae"><b>Burnley</b></span> received the most red cards this season with almost <b>1 red card each 5 games</b>. 
+            <br>Each team received a red card, except <span style="color:#4287f5">Luton Town</span>. Also, it's the 4th team that received the least yellow cards, this team is very disciplined!
+          </p>
+        </div>
+
+        <div class="container">
+          <div class="section-title">
+            <h3 style="color: #2a19ae;">Aerial duels won 🛫</h3>
+            <p style="margin-bottom: -15px;">Let's see which team were the <b>most dominating in aerial duels</b>:</p>
+          </div>
+          <div class="container" style="text-align: center; margin-bottom: 20px;">
+            <img src="../assets/img/articles/2023-2024-premier-league/aerial_duel_won.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+          </div>
+          <div style="text-align: center; margin-bottom: 15px;">
+            <a href="../assets/img/articles/2023-2024-premier-league/aerial_duel_won.png" download="@kevinnclas-aerial-duel-won-PL2324">
+              <button class="save-button">Save this image</button>
+            </a>
+          </div>
+          <p>
+            With <span style="color:#f54842"><b>56,9% of aerial duels won</b></span>, <span style="color: #2a19ae"><b>Liverpool</b></span> was the most dominating team on aerial duels.
+          </p>
+        </div>
+
+        <div class="container">
+          <div class="section-title">
+            <h3 style="color: #2a19ae;">Correlation between goals scored and points won 📈</h3>
+            <p style="margin-bottom: -15px;">I wanted to see if there were any correlation between <b>the number of goals scored and the points won by every team</b>. Let's look at the results:</p>
+          </div>
+          <div class="container" style="text-align: center; margin-bottom: 20px;">
+            <img src="../assets/img/articles/2023-2024-premier-league/correlation_goals_points.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+          </div>
+          <div style="text-align: center; margin-bottom: 15px;">
+            <a href="../assets/img/articles/2023-2024-premier-league/correlation_goals_points.png" download="@kevinnclas-correlation-goals-points-PL2324">
+              <button class="save-button">Save this image</button>
+            </a>
+          </div>
+          <p>
+            The coefficient of determination (R-squared) is equal to <span style="color:#f54842"><b>0,85</b></span>: this means that <b>85% of the variation in points per match can be explained by the number of goals scored</b>. 
+            <br><br>We can analysis this graph based on those two metrics:
+            <ul>
+              <li>
+                <span style="color: #2a19ae"><b>Manchester City, Arsenal and Liverpool</b></span> are logically at the top right of this graph, and are therefore <b>very performant</b> in terms of points per match, scoring also a lot of goals.
+              </li>
+              <li>
+                <span style="color: #2a19ae"><b>Tottenham and Aston Villa</b></span> obtained more points than their number of goals scored would suggest. They are therefore <b>more efficient</b> in terms of points obtained per goal scored.
+              </li>
+              <li>
+                <span style="color: #2a19ae"><b>Chelsea and Newcastle Utd</b></span> scored fewer points than their number of goals scored would suggest. They are therefore <b>less efficient</b> in terms of points obtained per goal scored.
+              </li>
+              <li>
+                <span style="color: #2a19ae"><b>Everton and Manchester Utd</b></span>, despite <b>scoring relatively few goals</b>, picked up slightly <b>more points than expected</b> compared to the general trend.
+              </li>
+            </ul>
+          </p>
+        </div>
+
+        <div class="container">
+          <div class="section-title">
+            <h3 style="color: #2a19ae;">Effectiveness 🚦</h3>
+            <p>
+              As we have already done for the players, we will now look at <b>teams efficiency</b>. 
+              <br>To measure it, this is how I did it:</p>
+              <ul>
+                <li>I've chosen to calculate this indicator according to two criteria: the first is <b>offensive efficiency</b>, which is the difference between the number of goals scored and the number of expected goals.</li>
+                  <ul>
+                    <li>Thus, a team with a positive result scores more often than expected.</li>
+                  </ul>
+                <li>The other criterion concerns <b>defensive efficiency</b>. This is done in the same way as the other criterion, by taking the difference between the number of goals conceded and the number of expected goals conceded.</li>
+                <ul>
+                  <li>Thus, a team with a negative result concede less goals than expected.</li>
+                </ul>
+              </ul>
+            </p>
+          </div>
+          <div class="container" style="text-align: center; margin-bottom: 20px;">
+            <img src="../assets/img/articles/2023-2024-premier-league/effectiveness_teams.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+          </div>
+          <div style="text-align: center; margin-bottom: 15px;">
+            <a href="../assets/img/articles/2023-2024-premier-league/effectiveness_teams.png" download="@kevinnclas-effectiveness-teams-PL2324">
+              <button class="save-button">Save this image</button>
+            </a>
+          </div>
+          <p>
+            Let's see the results in <b>4 categories</b>:
+            <ul>
+              <li>The <span style="color:#2c840e"><b>Efficient</b></span>, who are the most efficient teams in terms of goals scored and not conceded.</li>
+              <ul>
+                <li>We can highlight some teams who made a great season: <b>Fulham</b>, <b>Tottenham</b> or <b>Manchester City</b> of course.
+              </ul>
+              <li>The <span style="color:#F78902"><b>Prolific</b></span>, who are more efficient in terms of goals scored, but less efficient than expected in terms of goals conceded.</li>
+              <ul>
+                <li>We can highlight some teams who were good for scoring, but less for defending: <b>West Ham</b>, <b>Crystal Palace</b> or <b>Arsenal</b>.
+              </ul>
+              <li>The <span style="color:#F7D002"><b>Resolute</b></span>, who are more efficient in terms of goals not conceded, but less efficient than expected in terms of goals scored.</li>
+              <ul>
+                <li>We can highlight some teams who were good for defending, but less for scoring: <b>Liverpool</b> and <b>Everton</b>.
+              </ul>
+              <li>Finally, the <span style="color:#f70202"><b>Struglers</b></span>, who are less effective than expected in terms of goals scored and conceded.</li>
+              <ul>
+                <li>We can highlight some of the teams that lacked effectiveness and were a little disappointing: <b>Sheffield Utd</b>, <b>Brentford</b> or <b>Nottingham Forest</b>.
+              </ul>
+            </ul>
+          </p>
+
+          <div class="section-title">
+            <h4 style="color: #2a19ae;">Effectiveness at home</h4>
+            <p style="margin-bottom: -15px;">
+              It is interesting to see the same graph but for <b>teams playing at home</b>, as some teams were more effective at home than away:
+            </p>
+          </div>
+          <div class="container" style="text-align: center; margin-bottom: 20px;">
+            <img src="../assets/img/articles/2023-2024-premier-league/effectiveness_teams_home.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+          </div>
+          <div style="text-align: center; margin-bottom: 15px;">
+            <a href="../assets/img/articles/2023-2024-premier-league/effectiveness_teams_home.png" download="@kevinnclas-effectiveness-teams-home-PL2324">
+              <button class="save-button">Save this image</button>
+            </a>
+          </div>
+          <p>
+            As you can see, <b>Newcastle Utd</b> or <b>West Ham</b> now are in the Efficient category, where <b>Manchester City</b> and <b>Nottingham Forest</b> are now in the Prolific category.
+          </p>
+
+          <div class="section-title">
+            <h4 style="color: #2a19ae;">Effectiveness away</h4>
+            <p style="margin-bottom: -15px;">
+              As for home, let's now look at the same graph but for <b>teams playing away</b>, because some teams were more effective away than at home:
+            </p>
+          </div>
+          <div class="container" style="text-align: center; margin-bottom: 20px;">
+            <img src="../assets/img/articles/2023-2024-premier-league/effectiveness_teams_away.png" class="img-fluid" alt="" width="80%" data-aos="fade" style="border-radius: 5px;">
+          </div>
+          <div style="text-align: center; margin-bottom: 15px;">
+            <a href="../assets/img/articles/2023-2024-premier-league/effectiveness_teams_away.png" download="@kevinnclas-effectiveness-teams-away-PL2324">
+              <button class="save-button">Save this image</button>
+            </a>
+          </div>
+          <p>
+            As you can see, no team are left in the Resolute category. Also, <b>Liverpool</b> or <b>Aston Villa</b> now are in the Efficient category, where <b>Fulham</b> and <b>Brighton</b> are now in the Prolific category.
+          </p>
+        </div>
+      </section>
+      <!-- End Teams Section -->
+
+      <!-- ======= Thank you for reading ======= -->
+      <section id="thankyou" class="thankyou">
+        <div class="container">
+          <div class="section-title" style="margin-top: -20px;">
+            <h2>Thank you for reading !</h2>
+            <p style="margin-bottom: -20px;">It's been such an exciting Premier League season! This was a great opportunity for me to mix both of my passion, football and data analysis, and to challege myself with a long-term project. 
+              I really enjoyed <b>gathering data</b> from my various sources <i>(<a href="https://fbref.com/en/comps/1/schedule/World-Cup-Scores-and-Fixtures" target="_blank">fbref.com</a> and <a href="https://www.premierinjuries.com/injury-table.php" target="_blank">Premier Injuries</a></i>), <b>creating my data</b> files, <b>exploring</b> it, creating <b>vizualisation</b> to be easier for you to read and memorize, and finally <b>writing</b> and <b>coding</b> this article. 
+              <br>If you have any suggestion about other subjects that I am passionate about to do a project about it, <b>feel free to contact me</b>!
+              <br>You can check the notebook where I did all the data analysis right <a href="https://github.com/kevinnclas/2023-2024-PremierLeague-DataAnalysis/blob/main/script_analysis.ipynb" target="_blank">here</a>.
+              <br>If you are interested about day-by-day prediction depending on injured players, previous results and difficulty index depending the opponent, you can check my notebook <a href="https://github.com/kevinnclas/2023-2024-PremierLeague-DataAnalysis/blob/main/script_prediction.ipynb" target="_blank">here</a>.
+              <br>Thank you very much for reading me and my work, I tried to do my best to deliver the best data and analysis possible.
+            </p>
+          </div>
+        </div>
+      </section>
+  
+      <div id="contact-me" class="container">
+        <h4>Kevin Nicolas</h4>
+        <p>Feel free to contact me!</p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/kevinnclas/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/kevinnclas" target="_blank" class="git"><i class="bx bxl-github"></i></a>
+          <a href="https://www.instagram.com/kevinnclas/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+        </div>
+    </main>
+    <!-- End #main -->
+  
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>iPortfolio</span></strong>
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </footer><!-- End  Footer -->
+  
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  
+    <!-- Vendor JS Files -->
+    <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="../assets/vendor/aos/aos.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/typed.js/typed.min.js"></script>
+    <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
+  
+    <!-- Template Main JS File -->
+    <script src="../assets/js/main.js"></script>
+  </body>
+  
+  </html>
